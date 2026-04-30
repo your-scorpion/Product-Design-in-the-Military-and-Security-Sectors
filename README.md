@@ -1,18 +1,18 @@
-# Product Design → Cyber‑Security → AI (Fundamentals → Advanced)
+# Product Design in the Military and Security Sectors
 
 ## 1. Fundamentals of Product Design
 - **Design Thinking**  
 - **Composition and Grids for Web Design**  
 - **Fundamentals of Typography (including Web)**  
 - **Fundamentals of Technical Design**  
-- **Visual & Interaction Design** – Components: Design System in React  
+- **Visual & Interaction Design**  
 - **Product Design up to the UI Stage**  
 - **Variable Data in Adobe Illustrator**  
 - **Creating Interactive Publications in InDesign**  
 
 ## 2. Design Process & Production
-- **Ideation & Concept Development** – How to Generate Ideas Beyond Static  
-- **Prototyping & Rapid Iteration** – Arduino + TouchDesigner, Xcode for Interface Prototyping, Quartz Composer + Facebook Origami  
+- **Ideation & Concept Development**  
+- **Prototyping & Rapid Iteration**
 - **Transition from Static Prototypes to Interactive**  
 - **Useful Techniques in 3ds Max + V‑Ray**  
 - **Pixel Path – How Digital Color Management Works**  
@@ -38,7 +38,6 @@
 - **A/B Test Results Verification**  
 - **ANOVA and Bootstrap: Testing UX in Python**  
 - **Product ROI Analytics**  
-- **UX Analytics Based on Offline Data** *(Protected)*  
 
 ## 6. AI / Machine‑Learning Foundations
 - **Simple Recommendation Systems: ALS, AP@k, NDCG**  
@@ -57,8 +56,4 @@
 - **Acquiring Data from External Sources**  
 - **Python in Test Analysis**  
 - **Working with Tables in R: Data.table and OLAP**  
-- **Client‑Server Architecture of Casual Online Games** *(re‑purposed for simulation)*  
-
----  
-
-*The outline proceeds from introductory product‑design concepts, through security fundamentals, and culminates with AI techniques, each ordered from basic to advanced.*
+- **Client‑Server Architecture of Casual Online Games**
