@@ -45,7 +45,7 @@
 - **A/B Test Results Verification**  
 - **Recommendation Systems: ALS, AP@k, NDCG**  
 - **Machine Learning on ARM Microcontrollers (STM32)**  
-- **Gradient Boosting (AdaBoost)**  
+- **Gradient Boosting (AdaBoost)**
 
 ## 7. Data Science & Advanced Techniques
 - **PCA: Data Dimensionality Reduction**  
