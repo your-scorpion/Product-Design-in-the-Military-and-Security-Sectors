@@ -174,215 +174,163 @@ Accuracy: 0.9238.
 
 If you are reaching for a ready-made implementation, for serious projects on tabular data I would go with a modern gradient boosting library (CatBoost, XGBoost, LightGBM). For non-tabular data — neural networks. Or combinations of both: a voice assistant, for example, requires a dedicated network to detect a wake word ("Alice", "Siri") outside of a dialog context, plus separate models for speech recognition, intent detection, answer retrieval, and speech synthesis.
 
-**Where does AdaBoost fit in a product designer's life?** In real-world tasks you often need to give the business a retention forecast. The process might look like this: define what customer churn means in terms of measurable values → binary classification using the gradient boosting we just covered → drill down with features → A/B test with the group of customers who appear likely to leave. Or for simpler tasks — estimating the value of a car from its characteristics.
+**Where does AdaBoost fit in a product designer's life?** In real-world tasks you often need to deliver a retention forecast to the business. One approach: define what customer churn means in terms of measurable values → model it as a binary classification problem using gradient boosting → drill down with features to make the result actionable → run an A/B test on the customers who appear likely to leave. Simpler regression tasks work just as well — estimating a car's resale value from its characteristics, for example.
+
+More broadly, data-driven growth breaks down into several areas:
+
+**New products.** Every product grows, reaches a plateau, and eventually dies — the S-curve. Knowing when that decline starts matters, and so does understanding how to make a product faster, more pleasant, or cheaper. Calculating loan-default risk or monitoring driver behaviour are classic examples: a safe driver means lower insured risk, which translates to a cheaper policy.
+
+**Average order value.** It needs to grow. Per-customer price optimisation, personalised recommendations, and cross-sell suggestions all feed into this.
+
+**Retention.** Churn analysis, targeted promotions, review monitoring, customer clustering, recommendations. A straightforward metric is the return rate: current active users ÷ total users × 100 (e.g., 800,922 / 1,203,211 × 100 = 66%). The inverse — churn rate — is the fraction of users who left.
+
+**Conversion.** Omnichannel recommendations, scoring inbound leads for conversion potential, sales funnel analysis.
+
+**Cost reduction.** Targeting, replacing manual steps with algorithms or RPA, anomaly detection, chatbots, inventory management, demand forecasting, process optimisation.
+
+**Scaling.** Finding the right location for a new store.
 
 ---
 
-## Comments (7)
+## Extended example: segmenting users with LDA
 
----
+Boosted classifiers require labeled data, but many real-world problems arrive without labels. Consider a local news portal that wants to understand what kinds of readers it has. The available data is just readers and articles — no explicit categories.
 
-**Olga** · 14 Apr 2021
+The goal is to represent each user's interests as a vector. If labeled data exists, multiclass classification is an option, but labeling is expensive and teams usually end up doing unsupervised clustering instead. A standard approach is **Latent Dirichlet Allocation (LDA)**.
 
-Hi, I need to archive an 80 GB CSV export and the Ubuntu archiver has failed several times. Any suggestions?
+LDA extracts latent topics from documents based on word co-occurrence. A cooking article will tend to contain words like "oven", "flour", "dough", "bowl"; a finance article will contain "rate", "market", "risk". LDA assigns each document a mixture of topics and each topic a distribution over words. The output looks something like:
 
-> **Maksim Tsvetkov** · 14 Apr 2021
->
-> I'd try `pigz`, then `7z` with lzma2, and then `zstd`, one after another. If the machine simply cannot handle it, sample down the data.
+- Sentences 2, 3, 4, 5, 6: 100% Topic A
+- Sentences 1, 7, 8, 10: 100% Topic B
+- Sentence 9: 60% Topic A, 40% Topic B
 
----
+For each topic you can then inspect the top words: Topic A is 20% "oven", 10% "flour" — so Topic A is probably about food.
 
-**Yevhenii Selivanov** · 07 Jul 2021
+The algorithm refines this distribution by iterating over every word in every document. For each word it computes two probabilities — `p(theme|document)` (how likely is this topic in this document?) and `p(word|theme)` (how likely is this word given the topic?) — and multiplies them to get the updated probability that topic *t* generated word *w*. After many passes the distribution stabilizes.
 
-Do businesses use AI to find growth opportunities?
+In practice, start by loading the articles:
 
-> **Maksim Tsvetkov** · 07 Jul 2021
->
-> Business growth means long-term revenue. That covers new products, higher average order value, customer retention, improved conversion, scaling, cost reduction, and solid operational scalability (internal tools).
->
-> **New products** — every product grows, reaches a plateau, and eventually dies. This is the S-curve. Knowing when a product will die matters. Even more important is understanding how to make a product faster, more pleasant, or cheaper (for example, calculating loan risk, or assessing a driver's behaviour — if they drive safely you can factor in less risk and make the service cheaper).
->
-> **Average order value** — it needs to grow. You can compute a personalized price for each customer, offer recommendations, and suggest related products.
->
-> **Retention** — churn analysis, targeted promotions, review monitoring, customer clustering, recommendations. Easy to measure with the return rate metric: current active users ÷ total users × 100 (e.g., 800,922 / 1,203,211 × 100 = 66%). The inverse is churn rate: churned users ÷ total users × 100.
->
-> **Conversion** — omnichannel recommendations, scoring job applications for conversion potential, sales funnel analysis.
->
-> **Cost reduction** — targeting, replacing manual work with algorithms/RPA, anomaly detection, chatbots, inventory management and demand forecasting, process optimization.
->
-> **Scaling** — finding the right location for a new store.
+```python
+import pandas as pd
+news = pd.read_csv("data.csv")
+print(news.shape)
+news.head(10)
+news.iloc[0]['title']
+```
 
----
+Do the same for the reading history. You will need user IDs and a list of articles each user read over a given period:
 
-**Anar** · 28 Jun 2022
+```python
+users = pd.read_csv("users_articles.csv")
+users.head(3)
+```
 
-Hi! I have a city news portal and I need to identify user clusters. The data I have is essentially readers and articles.
+The raw text will almost certainly need cleaning. Use either stemming (stripping word endings: "ran" → "run") or lemmatisation for full morphological normalisation (verbs to infinitive, nouns to nominative). Stemming is fast but crude; prefer lemmatisation via `pymorphy2`. Use `razdel` to tokenise Russian text into words and sentences:
 
-> **Maksim Tsvetkov** · 28 Jun 2022
->
-> My approach would be this: the goal is to extract segments that describe a user's interests — essentially a vector representation of the user.
->
-> If you can do multiclass classification with labeled news data, great. But labeling takes a long time, and teams usually end up clustering news articles and describing users through the resulting segments — unsupervised learning (no target values). This is a classic LDA (Latent Dirichlet Allocation) problem.
->
-> From an article you can extract topics based on words. A cooking article will almost certainly contain words like "oven", "flour", "dough", "bowl", and so on. LDA outputs something like:
->
-> - Sentences 2, 3, 4, 5, 6: 100% Topic A
-> - Sentences 1, 7, 8, 10: 100% Topic B
-> - Sentence 9: 60% Topic A, 40% Topic B
->
-> You can also get statistics: Topic A is 20% "oven", 10% "flour" — from which you infer that Topic A is about food. Once you have this distribution you start refining it: for each word you make a pass and calculate the probability that a topic actually belongs to the article.
->
-> There will be two probabilities for topic membership: `p(theme|document)` — the probability that a topic appears in the document — and `p(word|theme)` — the probability of a word given a topic. Multiply them: `p(theme|document) × p(word|theme)` = the probability that topic *t* generates word *w*. Repeat this for every word in every article over many passes until the distribution stabilizes.
->
-> In practice:
->
-> ```python
-> import pandas as pd
-> # load data
-> news = pd.read_csv("data.csv")
-> print(news.shape)
-> news.head(10)
-> news.iloc[0]['title']
-> ```
->
-> Do the same for the articles that were actually read. You will need user IDs and a list of articles read over a given time period:
->
-> ```python
-> users = pd.read_csv("users_articles.csv")
-> users.head(3)
-> ```
->
-> The data will almost certainly need cleaning. Use either stemming (strip extra word endings: "ran" → "run") or lemmatization for morphological analysis (bring a verb to its infinitive form, a noun to nominative case). Stemming is fast but weak, so prefer lemmatization via `pymorphy2`. Use `razdel` for segmenting Russian-language text into tokens and sentences:
->
-> ```python
-> !pip install razdel pymorphy2
-> import re
-> import numpy as np
-> from gensim.corpora.dictionary import Dictionary
-> from razdel import tokenize
-> import pymorphy2
-> ```
->
-> To remove stopwords (conjunctions, prepositions, etc.):
->
-> ```python
-> import nltk
-> from nltk.corpus import stopwords
-> nltk.download('stopwords')
-> stopword_ru = stopwords.words('russian')
-> print(len(stopword_ru))
-> with open('stopwords.txt') as f:
->     additional_stopwords = [w.strip() for w in f.readlines() if w]
->
-> stopword_ru += additional_stopwords
-> len(stopword_ru)
-> ```
->
-> Text cleaning and lemmatization:
->
-> ```python
-> def clean_text(text):
->     if not isinstance(text, str):
->         text = str(text)
->     text = text.lower()
->     text = re.sub(r'[0-9]|[-—.,:;_%©«»?*!@#$^•·&()]|[+=\[\]/]', '', text)
->     text = re.sub(r'\s+', ' ', text.strip())
->     return text
->
-> cache = {}
-> morph = pymorphy2.MorphAnalyzer()
->
-> def lemmatization(text):
->     if not isinstance(text, str):
->         text = str(text)
->     tokens = list(tokenize(text))
->     words = [_.text for _ in tokens]
->     words_lem = []
->     for w in words:
->         if w[0] == '-':
->             w = w[1:]
->         if len(w) > 1:
->             if w in cache:
->                 words_lem.append(cache[w])
->             else:
->                 temp_cach = cache[w] = morph.parse(w)[0].normal_form
->                 words_lem.append(temp_cach)
->     words_lem_without_stopwords = [i for i in words_lem if i not in stopword_ru]
->     return words_lem_without_stopwords
->
-> news['title'] = news['title'].progress_apply(lambda x: lemmatization(x))
-> ```
->
-> Then train the model:
->
-> ```python
-> texts = list(news['title'].values)
-> common_dictionary = Dictionary(texts)
-> common_corpus = [common_dictionary.doc2bow(text) for text in texts]
-> ```
->
-> And the best part — training the second model:
->
-> ```python
-> N_topic = 20
->
-> %%time
-> from gensim.models import LdaModel
-> lda = LdaModel(common_corpus, num_topics=N_topic, id2word=common_dictionary)
->
-> from gensim.test.utils import datapath
-> temp_file = datapath("model.lda")
-> lda.save(temp_file)
-> lda = LdaModel.load(temp_file)
->
-> other_texts = list(news['title'].iloc[:3])
-> other_corpus = [common_dictionary.doc2bow(text) for text in other_texts]
->
-> unseen_doc = other_corpus[2]
-> print(other_texts[2])
-> lda[unseen_doc]
-> ```
->
-> Extract the result — especially the top words per topic:
->
-> ```python
-> x = lda.show_topics(num_topics=N_topic, num_words=7, formatted=False)
-> topics_words = [(tp[0], [wd[0] for wd in tp[1]]) for tp in x]
->
-> for topic, words in topics_words:
->     print(f"topic_{topic}: " + " ".join(words))
-> ```
->
-> And describe each user as a topic vector:
->
-> ```python
-> doc_dict = dict(zip(
->     topic_matrix['doc_id'].values,
->     topic_matrix[[f'topic_{i}' for i in range(N_topic)]].values
-> ))
->
-> def get_user_embedding(user_articles_list, doc_dict):
->     user_articles_list = eval(user_articles_list)
->     user_vector = np.array([doc_dict[doc_id] for doc_id in user_articles_list])
->     user_vector = np.mean(user_vector, 0)
->     return user_vector
-> ```
->
-> Final result:
->
-> ```python
-> %%time
-> user_embeddings = pd.DataFrame([
->     i for i in users['articles'].apply(lambda x: get_user_embedding(x, doc_dict))
-> ])
-> user_embeddings.columns = [f'topic_{i}' for i in range(N_topic)]
-> user_embeddings['uid'] = users['uid'].values
-> user_embeddings = user_embeddings[['uid'] + [f'topic_{i}' for i in range(N_topic)]]
-> user_embeddings.head(3)
-> ```
+```python
+!pip install razdel pymorphy2
+import re
+import numpy as np
+from gensim.corpora.dictionary import Dictionary
+from razdel import tokenize
+import pymorphy2
+```
 
----
+Remove stopwords (conjunctions, prepositions, and the like):
 
-**Anonymous** · 13 Dec 2023
+```python
+import nltk
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+stopword_ru = stopwords.words('russian')
+with open('stopwords.txt') as f:
+    additional_stopwords = [w.strip() for w in f.readlines() if w]
+stopword_ru += additional_stopwords
+```
 
-The code doesn't work — there are a lot of errors. Could you share a notebook link?
+Text cleaning and lemmatisation:
+
+```python
+def clean_text(text):
+    if not isinstance(text, str):
+        text = str(text)
+    text = text.lower()
+    text = re.sub(r'[0-9]|[-—.,:;_%©«»?*!@#$^•·&()]|[+=\[\]/]', '', text)
+    text = re.sub(r'\s+', ' ', text.strip())
+    return text
+
+cache = {}
+morph = pymorphy2.MorphAnalyzer()
+
+def lemmatization(text):
+    if not isinstance(text, str):
+        text = str(text)
+    tokens = list(tokenize(text))
+    words = [_.text for _ in tokens]
+    words_lem = []
+    for w in words:
+        if w[0] == '-':
+            w = w[1:]
+        if len(w) > 1:
+            if w in cache:
+                words_lem.append(cache[w])
+            else:
+                temp_cach = cache[w] = morph.parse(w)[0].normal_form
+                words_lem.append(temp_cach)
+    return [i for i in words_lem if i not in stopword_ru]
+
+news['title'] = news['title'].progress_apply(lemmatization)
+```
+
+Build the corpus and train the topic model:
+
+```python
+texts = list(news['title'].values)
+common_dictionary = Dictionary(texts)
+common_corpus = [common_dictionary.doc2bow(text) for text in texts]
+
+N_topic = 20
+
+%%time
+from gensim.models import LdaModel
+lda = LdaModel(common_corpus, num_topics=N_topic, id2word=common_dictionary)
+
+from gensim.test.utils import datapath
+temp_file = datapath("model.lda")
+lda.save(temp_file)
+lda = LdaModel.load(temp_file)
+```
+
+Inspect the top words per topic to label them:
+
+```python
+x = lda.show_topics(num_topics=N_topic, num_words=7, formatted=False)
+topics_words = [(tp[0], [wd[0] for wd in tp[1]]) for tp in x]
+for topic, words in topics_words:
+    print(f"topic_{topic}: " + " ".join(words))
+```
+
+Represent each user as the mean topic vector of the articles they read:
+
+```python
+doc_dict = dict(zip(
+    topic_matrix['doc_id'].values,
+    topic_matrix[[f'topic_{i}' for i in range(N_topic)]].values
+))
+
+def get_user_embedding(user_articles_list, doc_dict):
+    user_articles_list = eval(user_articles_list)
+    user_vector = np.array([doc_dict[doc_id] for doc_id in user_articles_list])
+    return np.mean(user_vector, axis=0)
+
+%%time
+user_embeddings = pd.DataFrame([
+    get_user_embedding(row, doc_dict) for row in users['articles']
+])
+user_embeddings.columns = [f'topic_{i}' for i in range(N_topic)]
+user_embeddings['uid'] = users['uid'].values
+user_embeddings = user_embeddings[['uid'] + [f'topic_{i}' for i in range(N_topic)]]
+user_embeddings.head(3)
+```
+
+The result is a compact numeric profile for every user — ready to feed into a clustering algorithm or a downstream recommender.
