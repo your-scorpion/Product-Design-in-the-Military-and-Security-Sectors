@@ -94,6 +94,8 @@ Why does choosing GCR unlock more options? Because UCR is one variant of GCR, an
 
 UCR has no obvious way to set the amount of black, but in practice it is close to Light at 60%.
 
+![The Custom CMYK separation-settings dialog in Photoshop](https://your-scorpion.ru/wp-content/uploads/2012/09/Screen-Shot-2016-06-23-at-17.33.48.png)
+
 Two related parameters you will meet in profile descriptions are **Black length** and **Black width**: roughly, the point at which colored inks begin to be replaced by black, and the strength with which the amount of black increases — both working by the image's tone. Black generation exists in the first place because of the crooked black-generation algorithm Photoshop uses; in the ECI profiles I recommend, black is generated roughly as in Photoshop at GCR Medium with UCA Amount −20%.
 
 ## Dot Gain
@@ -110,6 +112,8 @@ Photoshop automatically adds compensation when converting RGB to CMYK, accountin
 
 **UCA (Under Color Addition)** — available only under GCR, it governs the extra ink that remains after CMY separation in neutral regions: the addition of CMY inks in gray (black) proportions into shadow areas. Zero by default; raising it increases the density of neutral regions. Crudely, it is used so that shadows do not turn too gray under Heavy and Maximum.
 
+![A reminder that the steps above describe converting the image to CMYK — the final stage of layout preparation](https://your-scorpion.ru/wp-content/uploads/2012/09/critical.png)
+
 ## Saving and Exporting Files
 
 Remember that the above describes converting an image to CMYK — the final stage of layout preparation. Save to uncompressed TIFF (byte order under Windows) or to JPEG without compression (quality 12). You must be sure the image's dimensions will not change further and the quality stays at 300 ppi. A raster image is processed in the knowledge that sRGB cannot convey some CMYK shades — and even Adobe RGB cannot fully do so — but for print preparation use Adobe RGB (1998) with the profile embedded.
@@ -117,6 +121,8 @@ Remember that the above describes converting an image to CMYK — the final stag
 Images at 300 ppi can weigh a great deal. The accepted fix is ZIP compression: it does not distort the image, the photo's quality is unchanged, and the result will please you (a PDF exported one way weighs 591 MB; after Distiller, 137 MB). Also, there are still print shops on the market whose RIP behaves very badly with JPEG compression. ZIP is no panacea: the more unpredictable the neighboring pixels in an image, the worse the compression result.
 
 When laying out a catalog in InDesign with RGB JPEGs placed, you do not need to convert each raster by hand. On export to PDF, choose the Output tab and set **Convert to Destination (Preserve Numbers)**, then specify the required CMYK profile below; after Export, everything is converted to CMYK, images included. Keep in mind, though, that modern digital and wide-format equipment such as HP Indigo can give a better result from RGB than from CMYK — if the printer accepts PDF/X-3 and PDF/X-4 on input, you can probably feed it RGB for a better result. This applies to photos only; spot colors and raster brand elements are better converted to CMYK in advance, if you want, say, a true 100% magenta rather than CMYK (1%, 79%, 0%, 15%).
+
+![The InDesign PDF Output tab with "Convert to Destination (Preserve Numbers)" and the CMYK profile set](https://your-scorpion.ru/wp-content/uploads/2019/01/Screen-Shot-2019-01-09-at-9.29.21-AM.png)
 
 If you work on a Mac and graphics copied out of Word or Excel come out garbled — through copy/paste or through PDF — generate the PDF not with Apple's default Quartz PDFContext but with the Adobe Mac PDF Plug-in or similar; thanks to Adobe Distiller the problem should resolve. And to convert an InDesign PDF into a PowerPoint presentation, there is [pdf.io](https://pdf.io/).
 
@@ -137,6 +143,8 @@ There are, as far as I know, three main separation standards: SWOP, Japanese pri
 As for a universal profile: Fogra 39 for coated, Fogra 38 for offset, or ISOcoated_v2_300_ECI. SWOP is the print standard for the United States and Asia (and for newspapers in China), so it is better to use ISOcoated_v2_300_eci.icc from eci.org, or at least Euroscale (up to Fogra 27). Converting from CMYK to CMYK on the print shop's side is a perfectly good solution when you cannot convert from RGB to the required CMYK yourself — and the common objection that on an uncalibrated monitor you "saw it differently" proves little, since by that logic you could abandon Pantones too (they live in the States and use different pigments).
 
 You can build your own ICC profile straight from Photoshop without learning new software — it is not especially hard. Go to *Edit → Color Settings* and choose Custom CMYK from the dropdown, then configure to your needs (say, Dot Gain 18%, GCR, Black Ink Limit 97%, Total Ink Limit 310%). The main popular ICC parameters: **Ink Colors** (choose the ink set for the paper type — Coated or Uncoated); **Gray Ramp** (the role of the different inks in generating neutral gray); **Dot Gain** (compensation for the dot's size change on paper); **UCA Amount** (replacing black with color); **Black Generation** (the range of color that can be replaced by black); **Black Ink Limit** (the overall black cap); **Separation Type** (UCR removes the lower colors, GCR replaces the gray component).
+
+![Building an ICC profile through Custom CMYK in Photoshop](https://your-scorpion.ru/wp-content/uploads/2017/07/shot_170714_101847.png)
 
 That said, Photoshop builds separation profiles poorly. I would look toward [Color Toolbox](https://www.heidelberg.com/) and [i1Profiler](https://www.xrite.com/), with [ArgyllCMS](https://www.argyllcms.com/) as the more budget option. (And if you do stay in Photoshop, you will additionally want ColorLab to find the monitor's gamma function and ICCInspector to compute the color coordinates of the monitor's primaries.) A more accurate profile built through specialized software gives a better RGB → CMYK conversion for specific equipment — and that is precisely why "stock" Photoshop separation can lose much of an image's saturation. For printing on mugs or phone cases — that is, transfer and fixing in a heat chamber — people often open a profile with Profile Editor, GretagMacbeth, ArgyllCMS, ColorLogic's CoPrA, or colorAnt and make manual edits for the specific situation; i1Profiler has had its day, and even ProfileMaker is better. Different RGB spaces have different starting gamuts, and converting them into the same CMYK gives different results; the better the RGB primaries match the dominant wavelength (Color Dom λ:nm), the better the result — you can, for instance, shift green from 533.3 nm to 535.9 nm and get a new balance between the colors. For illustrations destined for print, ECI-RGB v2 paired with the matching coated profile is not a bad choice. But saturation is achieved more by print technology and photo work — multiple ink passes, Pantones, the Perceptual and Relative Colorimetric intents, work on the CMYK black channel, and printing on a good Epson onto glossy photo paper — than by profiles alone. There is little point preparing an image for the "large" gamuts (eciCMYK v2 / FOGRA59, FOGRA53) and preserving the saturation if you then print offset or coated with the smaller Fogra gamuts (39, 45, 47).
 
@@ -182,6 +190,8 @@ A more conceptual confusion is also common: a tradesperson tells you "300 dpi CM
 
 [![Trapping example](http://your-scorpion.ru/wp-content/uploads/2017/06/6.png)](http://your-scorpion.ru/wp-content/uploads/2017/06/6.png)
 
+![Trapping a stroke with overprint — the harder case of fine detail](https://your-scorpion.ru/wp-content/uploads/2017/06/6-1.png)
+
 A frequent overprint question: is 20% overprinted on 60% a result of 60%, or 80%? Overprint does not sum, unlike Multiply, which sums black — in practice, overprint of 20% over 60% = 20%. And for holes in a varnish the trick is overprint 0% over 100% = 0%, yielding a spot color. There are two kinds of overprint: OPM 0 and OPM 1 (in Illustrator, Standard overprint mode and Illustrator overprint mode). They differ in how they handle CMYK colors with zero values: with one mode, if the upper object has yellow = 0, the corresponding percentage of yellow in the object below is removed; with the other, the color of the object below is left untouched. And if Pantones display oddly in Illustrator, turn on Overprint Preview to emulate Lab; otherwise the editor emulates CMYK for the Pantones.
 
 ## Pantone and Spot Colors
@@ -190,21 +200,33 @@ A Pantone is a guarantee of the needed shade, with no variability — and some P
 
 Choosing a Pantone from the catalog, you choose a spot color formed not from CMYK but from a pre-mixed ink added separately to the press. Any Pantone is described at once by RGB values, an HTML hex code, and CMYK values, which lets it be reproduced both in print and on a monitor; very often a Pantone is chosen from an existing web color — first the RGB, then the closest catalog match. Once you have the name (of the form PANTONE 3561 C), send the corresponding chips to the printer for calibration: these are perforated tear-off paper squares, three per solid Pantone color, which also let you show the client the exact color. All the popular software ships with Pantone libraries — Adobe Photoshop, InDesign, QuarkXPress, and the rest. In Illustrator and Photoshop the libraries live under *Window → Swatches → Open Swatch Library → Color Books → PANTONE*. To convert a Pantone to CMYK, use the presets under *Color Books → PANTONE color bridge CMYK PC* (for coated) or *CMYK UP* (for uncoated); ignore the common internet advice to use *Edit → Edit Colors → Convert to CMYK*, which ignores the compensation formulas for different papers. Pantones can be mixed: there are formulas for the proportions to mix base Pantones into a given shade, and the fan deck shows the percentage ratios. On a bad monitor the colors display incorrectly, of course. Hand the shop CMYK + one color and discuss it with production; the shop will say they lack that Pantone and offer an alternative, and you insist on your chosen Pantone — let them buy it (€20/kg, silver and gold €40), though purchasing will stretch the deadline. My own criterion for choosing a shop is, at minimum, equipment that can print in seven inks.
 
+![Pantone libraries and the color-bridge presets in Adobe software](https://your-scorpion.ru/wp-content/uploads/2019/02/Untitled-2.png)
+
 **Why do Pantones display incorrectly on screen,** their color differing markedly from the fan deck? If a color profile were enough, there would be no need to update the fan decks every year. Use the profile for your press (ideally something like an HP Indigo 5500), since RGB, CMYK, and Pantone are separate worlds. All Pantones display incorrectly on any uncalibrated monitor — the shade is usually muted, since Pantones are quite bright and saturated. Only about 60% of the fan-deck colors can be reproduced in CMYK. Pantones come as C (coated) and U (uncoated), used by paper type; uncoated absorbs the ink (which alone makes correct on-screen rendering impossible — absorbing makes the color duller), and Pantones often fall outside the monitor's RGB gamut, all on the assumption that Pantones are conceived as opaque (solid) colors. For example, PMS 287 and PMS 300 look identical on screen, though only the first is the blue of the American flag.
 
 **Using a Pantone in a photo.** Painting a halftone image with a Pantone such that it matches the reference color 100% is an unsolvable task — you must account for trapping (ink overlay) and the tone change when a spot ink is screened (autotype tinting). If the task is simply a Pantone with transparency on a colored background, use overprint; if the background is dark, print it over a light Pantone, and achieve a smooth transition from Pantone to ordinary ink with trapping. Technically you make a mask: select the full range of the needed color in the Channels panel with Ctrl-click on a channel, then Ctrl+Alt/Shift-click another channel to subtract/add to the selection; check the selection edges very carefully, accounting for the ink-laydown order and trapping; create a new channel and assign it a Spot color, which it is vital to verify in Adobe Acrobat Pro. From Photoshop's point of view any spot is a solid color with no ink beneath it; it cannot mix base spot colors in a proportion we set — such operations are done in other software.
+
+![A spot-color channel built from a masked selection, verified in Acrobat Pro](https://your-scorpion.ru/wp-content/uploads/2019/06/Untitled-1.jpg)
 
 **The blackest Pantone.** Any deep black is a mix of black with other colors, so casts are inevitable. A good choice in most cases is 433 C in two layers, with a deep anilox. And if the shop says varnish will darken the black, do not believe them — varnish always lightens dark colors.
 
 **Marking up a Pantone as a separate channel in InDesign** (when printers ask for it): go to the Swatches panel, choose New Color Swatch from the burger menu, set Color Type to Spot and Color Mode to the needed Pantone library (usually PANTONE Solid Coated), pick the Pantone, click Add (repeat for more than one), then Done — and replace your Pantones with the ones added to the Swatches panel.
 
+![InDesign: New Color Swatch in the Swatches panel menu](https://your-scorpion.ru/wp-content/uploads/2019/06/Untitled-1.png)
+
+![InDesign: choosing a Spot color type and the PANTONE Solid Coated library](https://your-scorpion.ru/wp-content/uploads/2019/06/8654698789.png)
+
 ## File Preparation, PDF, and Imposition
 
 **Preflighting a layout** before sending it: use Adobe Acrobat Pro, *Tools → Print Production → Output Preview*. Watch the "Separations" item, which lists the colors; if you find a color that should not be there, you can switch off the display of particular colors and see which elements to recolor, and the "Show" menu lets you check for RGB elements. You can also check for exceeding the total ink with the "Total Area Coverage" checkbox. In Illustrator you can quickly convert all colors via *Edit → Edit Colors → Convert to CMYK*, then in the Swatches palette click "Add Used Colors" and delete any stray Pantones that appear.
 
+![Acrobat Pro Output Preview, showing Separations and Total Area Coverage](https://your-scorpion.ru/wp-content/uploads/2017/01/Screenshot_1.png)
+
 **Removing transparency from a PDF** (when the shop complains): use PDF Optimizer (older Acrobat) or Save As Optimized PDF (recent versions) and mind the Transparency Flattener settings — better still, re-export from the program where the PDF was laid out rather than re-saving the finished PDF. The old Export/PostScript route in Acrobat Reader used to be relevant, but lately one meets PDFs that Acrobat cannot export to PS at all. C'est la vie.
 
 **Converting all fonts to curves in a large PDF:** in InDesign, draw a transparent rectangle on a new layer placed below everything, ungroup all objects so text in groups is not lost, then go to *Edit → Transparency Flattener Presets* and create a new preset (the shop may adjust these). Then *File → Export → Adobe PDF (print)* with General → Standard → none, Compatibility → Acrobat 4 (PDF 1.3), and Advanced → Transparency Flattener Preset set to the preset just created. You can plan transparent rectangles on a new layer in advance when building master pages. Create Outline also turns everything to curves, but risks distorting strokes, losing style tricks, and rendering complex vectors strangely. In Acrobat Reader, alternatively: add a watermark with opacity at 0% and any text, then *Advanced → Print Production → Flattener Preview*, tick "convert to curve," and apply — an archaic method.
+
+![InDesign transparency-flattener preset settings for converting fonts to curves](https://your-scorpion.ru/wp-content/uploads/2016/06/Screen-Shot-2016-06-22-at-08.52.15.png)
 
 **Saving PDF/A** (the archival standard, per GOST and ISO 19005:2005): PDF/A embeds fonts and strips hyperlinks and multimedia, so the document opens anywhere, anytime. There are subformats such as PDF/A-1a and PDF/A-1b; in Russia PDF/A-1a is requested more often. There are many nuances to account for when creating and saving, but they are easily fixed and edited. Saving is simple — *File → Save As → More Options → PDF/A*; recent Acrobat versions offer to save with archival support directly, and Preflight should verify the document and tick the conformance box.
 
@@ -214,7 +236,11 @@ Choosing a Pantone from the catalog, you choose a spot color formed not from CMY
 
 **Imposition.** I do not recommend doing imposition in InDesign; there are dedicated Acrobat Pro plugins (Quite Imposing, Quark Imposer, etc.) and standalone programs for imposing from PDF (Signa, Preps, etc.) — most often I have worked with Preps. Still, in InDesign it is done via *File → Print Booklet* (InBooklet in CS/CS2); the print settings hide under Current Settings. The layout types: **2-up Perfect Bound** — a book, split into several signatures each with its own imposition, then bound (ideally a sewn binding, which is reliable and convenient; thick books are usually sewn, but it costs more); **Consecutive** — a concertina booklet, with spreads built from single pages accounting for the folds; **2-up Saddle Stitch** — for small editions folded and stapled after printing. Remember the page count must be a multiple of 4 (the staple), though multiples of 2 (thermal binding, spiral) and 16 also occur.
 
+![InDesign Print Booklet imposition settings](https://your-scorpion.ru/wp-content/uploads/2015/04/print_setting.png)
+
 To **un-impose** a book with no source (say 800 pages): if there were not too many pages, I would place it in InDesign and re-output page by page, with guides solving the exact positioning — but with 800 the first thing that comes to mind is PDF Toolbox, then Quite Imposing → Shuffle Pages (Quite Imposing can also cut, as I recall). Or in Acrobat: duplicate the file, *Document → Crop Pages* to keep only even/odd pages and extract page by page with *Document → Extract Pages* into separate folders; with Total Commander rename the even files page1/page2/page3 into 001/003/005 (using counter parameters for one batch) and 002/004/006 for the other; then *File → Combine → Merge Files into a Single PDF*. There is also a SplitPages.js script for Acrobat, dropped into the Acrobat JavaScript folder.
+
+![PDF Toolbox, used to take apart an imposed PDF](https://your-scorpion.ru/wp-content/uploads/2018/04/Screenshot_1.png)
 
 For **packaging dieline dimensions**, ideally you do not set them in Illustrator at all — they are placed by a structural designer on the dieline in a specialized CAD such as Esko ArtiosCAD or Arden Software ImpactCAD (CorelDRAW also has a dedicated tool). If you would rather not leave Illustrator, there are plugins; I used [CADtools](https://www.hotdoor.com/cadtools) years ago, and there are surely others. Or place them by hand: stick + stick + stick = an arrow.
 
@@ -227,6 +253,10 @@ For **packaging dieline dimensions**, ideally you do not set them in Illustrator
 [![Print control marks](http://your-scorpion.ru/wp-content/uploads/2019/03/3d.jpg)](http://your-scorpion.ru/wp-content/uploads/2019/03/3d.jpg)
 
 **Barcodes.** For EAN-13 I would not recommend inverting or recoloring — only phone-camera scanners will read an inversion; for UPC, inversion is acceptable. My experience is that any experiments with barcodes can spell trouble. Light colors (including red and orange) suit the spaces between bars; bars need dark colors — black, blue, green — and composite colors are unfit for barcodes. Even if a code scans on tests, ancient retail equipment far from large cities may not read it, and glossy surfaces and cellophane hurt readability too. Mind the color pairing: black on red *may* be fine, since lasers read with red light, but red on white will certainly not read.
+
+![Barcode color combinations that are almost certainly readable](https://your-scorpion.ru/wp-content/uploads/2018/10/ok.gif)
+
+![Barcode color combinations a scanner is guaranteed not to read](https://your-scorpion.ru/wp-content/uploads/2018/10/saila.gif)
 
 **Flexo.** The key things are ink order and trapping. The most common ink orders are CMYK and YMCK; Pantones are trickier, but the gist is the same — making a flexo layout, know which ink will cover which and write it down for the printers.
 
@@ -245,4 +275,6 @@ For **packaging dieline dimensions**, ideally you do not set them in Illustrator
 If you got confused and knocked all your Photoshop settings astray, there is a simple way to put everything right. In Color Settings, just choose Europe Prepress 3 or Europe General Purpose 3 — the only difference is the RGB profile: sRGB for poor monitors (understanding which part of the CMYK gamut you lose), Adobe RGB for fine monitors with the matching gamut.
 
 Rock and roll, comrades.
-registration and control marks, barcodes, flexo, fluorescent and UV inks, semitransparent ink over dark, color proofing, paper formats, and vacuum-formed plastic. Software steps and parameter values reflect the author's original advice; the few intrinsic quirks of the source are preserved.</sub>
+
+---
+
