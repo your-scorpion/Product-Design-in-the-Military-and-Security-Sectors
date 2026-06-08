@@ -292,7 +292,3 @@ A reader once asked how I would advise someone to learn to draw. My answer:
 ## In Closing
 
 During my studies I had one very good teacher — a fine specialist, not worn down by the academic school, and a thoroughly good man. He criticized no one and never said a person's work had blunders and flaws; there were always only wishes for the work. And here is one of his most important wishes: a work should contain no superfluous shade. To this day I more than agree.
-
----
-
-<sub>Translated from the Russian original by Maksim Tsvetkov. The author's nine reader Q&A replies — on LED lamps for work, lighting a home studio, removing the gray from complementary gradients, color contrast for readable text, naming colors in a project, white balance and color management, calibrating wide-gamut monitors, white balance in Photoshop, and how to learn to draw — have been woven into the relevant sections above. Statements reflect the author's original framing.</sub>
