@@ -1,9 +1,5 @@
 # Client-Server Architecture of Casual Networked Games
 
-*By Maxim Tsvetkov · 11 August 2013*
-
-> Translated from the original Russian article.
-> Source: <https://your-scorpion.ru/client-server-games/>
 
 ---
 
