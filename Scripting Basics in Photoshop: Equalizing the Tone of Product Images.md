@@ -1,7 +1,5 @@
 # Scripting Basics in Photoshop: Equalizing the Tone of Product Images
 
-*Max Tsvetkov · 3 November 2013*
-
 A word of warning up front: schoolkids have already mastered Actions in Photoshop. They slap their group's logo onto thousands of images without breaking a sweat, and some of them batch-process beach photos for fun. Isn't it time to learn something a little more demanding? The market, as you can see, keeps growing : )
 
 Photoshop has another, far more powerful tool for automating your work: the JavaScript programming language. To put it to use you'll need to pick up a bit of scripting so you can automate repetitive tasks and get the drudgery out of your day. This is absolutely not "real" programming, so don't be intimidated. All it takes is a minimum of Photoshop CS2 and a maximum of willingness to level up your skills.
