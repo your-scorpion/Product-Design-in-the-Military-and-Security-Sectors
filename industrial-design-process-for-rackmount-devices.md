@@ -1,9 +1,4 @@
----
-title: "The Industrial Design Process for Rackmount Devices"
-author: "Max Tsvetkov"
-date: "2018-08-01"
-source: "https://your-scorpion.ru/rackmount-industrial-design/"
----
+
 
 # The Industrial Design Process for Rackmount Devices
 
