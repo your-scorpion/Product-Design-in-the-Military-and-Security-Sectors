@@ -2,24 +2,6 @@
 
 > Translated and adapted from the Russian original by Maxim Tsvetkov.
 
-## Contents
-
-- [Getting the colour right first](#getting-the-colour-right-first)
-- [The manual way, and the tools that replace it](#the-manual-way-and-the-tools-that-replace-it)
-- [Hitting the pixel grid](#hitting-the-pixel-grid)
-- [Drawing icons that look right](#drawing-icons-that-look-right)
-- [Measuring and spec tools](#measuring-and-spec-tools)
-- [Naming and structuring source files](#naming-and-structuring-source-files)
-- [Photoshop Generator](#photoshop-generator)
-- [Slicing icons with Generate](#slicing-icons-with-generate)
-- [Extract Assets](#extract-assets)
-- [Densities and target sizes](#densities-and-target-sizes)
-- [Optimisers and compression](#optimisers-and-compression)
-- [File formats](#file-formats)
-- [Fonts and text on mobile](#fonts-and-text-on-mobile)
-- [Adaptive and vector icons](#adaptive-and-vector-icons)
-- [Material Design, shadows, and navigation](#material-design-shadows-and-navigation)
-- [Saving, files, logs, and versioning](#saving-files-logs-and-versioning)
 
 The designer is often handed the technical work of slicing graphics for iPhone and Android — pixel-perfect, naturally, since the graphics are the main means of expression. Slicing eats an enormous amount of time, time better spent working with your head than with your hands. Happily, the process is automated in a great many programs and plugins. You may have no wish to master new tools and can afford to hire an outsourcer; he will slice the images well enough, but the work has to be checked, the tickets with corrections written, the graphic optimisation watched, and the man paid, so the time saved evaporates. Let us look instead at the tools the market offers for this routine.
 
