@@ -1,48 +1,5 @@
 # Foundations of Cryptography
 
-> A practical, opinionated tour through modern cryptography — symmetric and asymmetric encryption, hashing, TLS, key management, PKI, and real-world deployments.
-
-**Author:** Maksim Tsvetkov · **Originally published:** 11 October 2022 · Translated from Russian.
-
----
-
-## Table of Contents
-
-- [Symmetric Encryption](#symmetric-encryption)
-  - [Binary digits and the XOR operation](#binary-digits-and-the-xor-operation)
-  - [Key sizes](#key-sizes)
-  - [Block ciphers](#block-ciphers)
-  - [Stream ciphers](#stream-ciphers)
-  - [Message Authentication Codes (MAC)](#message-authentication-codes-mac)
-  - [Synchronization: clocks, sequences, and nonces](#synchronization-clocks-sequences-and-nonces)
-  - [Hash functions](#hash-functions)
-  - [Modes of operation](#modes-of-operation)
-- [DES](#des)
-- [The Vernam Cipher](#the-vernam-cipher)
-- [Asymmetric Encryption](#asymmetric-encryption)
-- [RSA](#rsa)
-- [TLS](#tls)
-  - [Intercepting session keys](#intercepting-session-keys)
-- [Diffie–Hellman](#diffiehellman)
-- [Authentication](#authentication)
-- [Key Hierarchy](#key-hierarchy)
-  - [Digital signatures](#digital-signatures)
-- [Protocols](#protocols)
-- [PKI and Key Storage](#pki-and-key-storage)
-  - [A practical aside: archiving and protecting a file from the command line](#a-practical-aside-archiving-and-protecting-a-file-from-the-command-line)
-  - [A practical aside: generating your own SSH key](#a-practical-aside-generating-your-own-ssh-key)
-- [Applied Cases](#applied-cases)
-  - [IoT](#iot)
-  - [Base stations](#base-stations)
-  - [Wi-Fi](#wi-fi)
-  - [Cryptocurrencies](#cryptocurrencies)
-  - [Mobile calls](#mobile-calls)
-  - [Identification cards](#identification-cards)
-  - [Email](#email)
-- [A Catalogue of Attacks](#a-catalogue-of-attacks)
-- [A Short Glossary of Terms](#a-short-glossary-of-terms)
-
----
 
 ## Symmetric Encryption
 
