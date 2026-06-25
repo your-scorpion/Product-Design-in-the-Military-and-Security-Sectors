@@ -2,29 +2,6 @@
 
 > A working designer's field guide to prepress: how CMYK and Pantone actually behave, total ink limits, resolution math, black generation, dot gain, color profiles, monitor calibration, screening, trapping, spot colors, file preparation, imposition, and a long tail of production edge cases.
 
-**Author:** Maksim Tsvetkov · **Originally published:** 16 September 2012 · Translated from Russian. *(Over the years the author answered dozens of reader questions in the comments; every substantive answer is folded into the relevant section below, organized by theme.)*
-
----
-
-## Table of Contents
-
-- [How Printing Works: CMYK and Pantone](#how-printing-works-cmyk-and-pantone)
-- [Ink Sums and the Total Ink Limit](#ink-sums-and-the-total-ink-limit)
-- [Resolution: DPI, PPI, and the Math](#resolution-dpi-ppi-and-the-math)
-- [Black Generation: GCR and UCR](#black-generation-gcr-and-ucr)
-- [Dot Gain](#dot-gain)
-- [Saving and Exporting Files](#saving-and-exporting-files)
-  - [A practical aside: nonlinear gradients and banding](#a-practical-aside-nonlinear-gradients-and-banding)
-- [Color Profiles and RGB-to-CMYK](#color-profiles-and-rgb-to-cmyk)
-- [Monitor Calibration and Color Management](#monitor-calibration-and-color-management)
-- [Screening: Linature, Screen Angle, and Dot Shape](#screening-linature-screen-angle-and-dot-shape)
-- [Trapping and Overprint](#trapping-and-overprint)
-- [Pantone and Spot Colors](#pantone-and-spot-colors)
-- [File Preparation, PDF, and Imposition](#file-preparation-pdf-and-imposition)
-- [Special Production Cases](#special-production-cases)
-- [Resetting Your Color Settings](#resetting-your-color-settings)
-
----
 
 As it happens, I currently spend a great deal of time re-preparing other people's layouts for print. Building on the questions my colleagues raise most often, I decided to write an article after which you should already understand for yourself how to solve printing problems.
 
