@@ -1,38 +1,6 @@
 # An Introduction to Color and Light Theory
 
 
----
-
-## Table of Contents
-
-- [Why Color Matters](#why-color-matters)
-- [How Light Works](#how-light-works)
-- [Light in Numbers](#light-in-numbers)
-  - [A practical aside: are LED lamps good enough for work?](#a-practical-aside-are-led-lamps-good-enough-for-work)
-- [Light and Shadow](#light-and-shadow)
-  - [A practical aside: lighting a home broadcast studio](#a-practical-aside-lighting-a-home-broadcast-studio)
-- [How We Perceive Color](#how-we-perceive-color)
-- [The Emotional Life of Colors](#the-emotional-life-of-colors)
-- [Seasonal Color Types](#seasonal-color-types)
-- [The 60/30/10 Rule](#the-603010-rule)
-- [Color Balance and Complementary Contrast](#color-balance-and-complementary-contrast)
-- [Saturation, Base Colors, and Harmony](#saturation-base-colors-and-harmony)
-  - [A practical aside: killing the gray in complementary gradients](#a-practical-aside-killing-the-gray-in-complementary-gradients)
-- [Contrast and Image Quality](#contrast-and-image-quality)
-  - [A practical aside: color contrast for readable text](#a-practical-aside-color-contrast-for-readable-text)
-- [Color on the Web](#color-on-the-web)
-  - [A practical aside: naming colors in a project](#a-practical-aside-naming-colors-in-a-project)
-- [White Balance and Color Management](#white-balance-and-color-management)
-  - [A practical aside: white balance in Photoshop](#a-practical-aside-white-balance-in-photoshop)
-- [Vision](#vision)
-- [Light Versus Color, and Albedo](#light-versus-color-and-albedo)
-- [The Law of Complementary Colors](#the-law-of-complementary-colors)
-- [Symbolism](#symbolism)
-- [A practical aside: how to learn to draw](#a-practical-aside-how-to-learn-to-draw)
-- [In Closing](#in-closing)
-
----
-
 Today I will cover the fundamentals of color science. But I have no intention, of course, of limiting myself to advising you to paint a color wheel in watercolor and do a still life in three colors. Those are basic exercises you can manage on your own. This article leans more toward *memory colors*, *neutral colors*, and other popular terms from the color grading of photo, video, and art.
 
 ## Why Color Matters
