@@ -1,8 +1,5 @@
 # An Introduction to Color and Light Theory
 
-> Color and light, photons and color science — how light behaves, how the eye and brain build color from it, what colors mean to us emotionally and culturally, and how all of this turns into practical decisions in design, painting, lighting, and on screen.
-
-**Author:** Maksim Tsvetkov · **Originally published:** 16 September 2012 · Translated from Russian.
 
 ---
 
