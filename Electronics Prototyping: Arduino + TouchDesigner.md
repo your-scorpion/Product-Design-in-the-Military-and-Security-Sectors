@@ -1,9 +1,4 @@
----
-title: "Electronics Prototyping: Arduino + TouchDesigner"
-author: "Max Tsvetkov"
-date: "2018-03-24"
-source: "https://your-scorpion.ru/arduino-microelectronics-prototyping/"
----
+
 
 # Electronics Prototyping: Arduino + TouchDesigner
 
