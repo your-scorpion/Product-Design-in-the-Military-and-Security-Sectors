@@ -2,24 +2,6 @@
 
 > Translated and adapted from the Russian original by Maxim Tsvetkov.
 
-## Contents
-
-- [What logic is for](#what-logic-is-for)
-- [The law of identity](#the-law-of-identity)
-- [When the client's experience outweighs yours](#when-the-clients-experience-outweighs-yours)
-- [Building an argument](#building-an-argument)
-- [Paradox versus contradiction](#paradox-versus-contradiction)
-- [The trap of authority](#the-trap-of-authority)
-- [Formal and dialectical logic](#formal-and-dialectical-logic)
-- [Deduction and proof](#deduction-and-proof)
-- [Understanding what the client actually needs](#understanding-what-the-client-actually-needs)
-- [Running the conversation](#running-the-conversation)
-- [A little probability](#a-little-probability)
-- [The Kano model](#the-kano-model)
-- [Lessons from e-grocery](#lessons-from-e-grocery)
-- [Knowing who you're designing for](#knowing-who-youre-designing-for)
-- [Leadership, analysis, and the business around the work](#leadership-analysis-and-the-business-around-the-work)
-- [A closing puzzle](#a-closing-puzzle)
 
 ## What logic is for
 
