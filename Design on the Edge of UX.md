@@ -1,6 +1,5 @@
 # Design on the Edge of UX. The Things People Rarely Write About.
 
-*Maxim Tsvetkov — 29 June 2014*
 
 Being a designer is not the easiest job in the world. Take, as an example, the process of getting a mockup approved. You know that feeling when a design slowly degrades under a hundred rounds of edits? Of course you do. So let's look at how to make design approval easier and faster. Start from this premise: the work has to be done quickly, to a high standard, and within the brief. If you're producing garbage, there's no point applying any of the methods below. But if you do quality work, then it pays to master the less obvious techniques for getting a mockup signed off — techniques that go beyond simply executing the work well.
 
