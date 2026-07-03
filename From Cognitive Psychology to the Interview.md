@@ -1,6 +1,5 @@
 # From Cognitive Psychology to the Interview
 
-*Max Tsvetkov · originally published 11 October 2019. Translated and adapted from the Russian, with the author's follow-up answers from the original comment thread woven into the body as part of the argument.*
 
 ---
 
