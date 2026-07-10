@@ -120,9 +120,17 @@ Documentation isn't only solid walls of text. For a front-end developer the prim
 
 Need to describe a lot of nested problems? Use a **Fishbone diagram**. The problem sits in the fish's head, and the potential causes run along the bones. The tips of the bones hold categories of cause, and beneath each bone sit the causes themselves. Each bone has its own theme — one bone is personnel, a second technology, a third resources — and note that resources ≠ personnel: there can be enough personnel while the processes are inefficient, which leads to a wasteful allocation of resources.
 
+![Fishbone diagram — the causes of not shipping the super-app](https://your-scorpion.ru/wp-content/uploads/2022/02/5085495.png)
+
+*A Fishbone (Ishikawa) diagram: the effect — being unable to ship the super-app — sits in the head, and the causes are grouped along the bones under Design, Processes, Management, and Code quality. (The labels in this source image remain in the original Russian.)*
+
 Next is the **interrelationships diagram**, which helps you see the links between many aspects visually — especially useful in complex situations.
 
 Then the **process flow**, which shows how a business process works, people and systems included. A diagram like this can vividly show how an operator works at an offline point of sale.
+
+![Process flow for a point of sale](https://your-scorpion.ru/wp-content/uploads/2022/03/Group-1.png)
+
+*A process flow for an offline point of sale: the purchase process branches on "credit card or cash?", and card payments branch again on whether the acquiring bank is under sanctions.*
 
 A **capability table** is an ordinary table listing the problems, their root causes, and the methods of solving them. You can enrich it with columns for deadlines, completion status, priority, a link to the Jira task, and so on.
 
@@ -132,6 +140,10 @@ A **capability table** is an ordinary table listing the problems, their root cau
 | Textures don't load on the network map. | Ordinary textures are slow to upload to the GPU. | Use compressed textures instead of PNG/JPG. |
 
 An **affinity diagram** gathers all the problems and solutions into intelligible groups, from which you can sometimes even build a scenario. Often such a diagram is the product of a brainstorm, after clustering and tagging.
+
+![Affinity diagram](https://your-scorpion.ru/wp-content/uploads/2022/02/Group-690.png)
+
+*An affinity diagram sorting ideas under three headings — Motivation (pizza every Friday, perks for seniors, free lunches, upskilling courses, a clear career path), Profit growth (grow sales in Asia, adapt products for the Eastern market, more salespeople in Singapore, close unprofitable projects, replace the commercial director), and Working with users (regular UX research, review analysis in support, social channels, more time on interfaces, UX courses for managers).*
 
 There are nearly always competitors in the market. In competitor analysis we work out which of them is already solving the problem we want to solve. To identify best practices we run pairwise comparisons, and we arrive at a table like this:
 
@@ -181,6 +193,10 @@ Any of your work can serve internal ends or outward-facing presentations alike, 
 
 **Ecosystem map** — we visualize the tools among the various tools that together form a single picture of the world.
 
+![Ecosystem map](https://your-scorpion.ru/wp-content/uploads/2022/02/Group-689.png)
+
+*An ecosystem map radiating out from "Experience mapping" to the concepts around it — Mead's triad, the loyalty loop, experience typology, employee-experience research, the landscape concept, metrics, the CJM, and problem framing.*
+
 **Context diagram** — shows both system and human interfaces at once. Usually very complex, both visually and to take in.
 
 **Feature model** — all the features as a hierarchy.
@@ -195,7 +211,35 @@ There are several languages for creating diagrams. BPMN — for complex business
 
 The starting point is usually a circle, a decision is a diamond, and a process is a square. Documents are a square with a wavy bottom edge, data is a parallelogram, and arrows show the links. The diamond is a gateway, a condition — used to control the divergence and convergence of the flow of operations within a process. The circle can mean the start point, an intermediate point, or the final value, depending on the thickness of its stroke.
 
+![Diamond — gateway](https://your-scorpion.ru/wp-content/uploads/2022/02/Rectangle-488.png)
+
+*The diamond is a gateway, or condition — used to control the divergence and convergence of the operation flow within a process.*
+
+![Circle — start point](https://your-scorpion.ru/wp-content/uploads/2022/02/Rectangle-489.png)
+
+*The circle marks a start point, an intermediate point, or a final value, depending on the thickness of its stroke.*
+
+![Rounded rectangle — scenario step](https://your-scorpion.ru/wp-content/uploads/2022/02/Rectangle-488-1.png)
+
+*The base component for the steps of a scenario.*
+
 Crow's-foot notation gives the styles for showing the links between nodes. Multiplicity denotes multiple entities of one type: the relationship *employees* >|—|< *courses* means employees have taken many different courses. *Man* ||—|○ *woman* means a man is linked to one woman or none — zero-or-one. *Man* ||—○< *woman* means a man is linked to many women or none — zero-or-many. And when both ends are "one and only one," a link implies a single entity: *cat* ||—|| *kitten* means the cat has exactly one kitten.
+
+![Crow's-foot: multiplicity](https://your-scorpion.ru/wp-content/uploads/2022/03/Group-33035.png)
+
+*Multiplicity — many entities of one type. Employees relate to many different courses.*
+
+![Crow's-foot: zero or one](https://your-scorpion.ru/wp-content/uploads/2022/03/Group-33038.png)
+
+*Zero-or-one — a man is linked to one woman or to none.*
+
+![Crow's-foot: zero or many](https://your-scorpion.ru/wp-content/uploads/2022/03/Group-33037.png)
+
+*Zero-or-many — a man is linked to many women or to none.*
+
+![Crow's-foot: one and only one](https://your-scorpion.ru/wp-content/uploads/2022/03/Group-33034.png)
+
+*One and only one — a cat has exactly one kitten.*
 
 ## Describing scenarios
 
