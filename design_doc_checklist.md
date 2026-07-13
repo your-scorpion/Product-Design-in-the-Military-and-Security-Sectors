@@ -1,6 +1,6 @@
 # Lead Product Designer (Cybersecurity) — Design Review Checklist
 
-*Structured like [MLSystemDesign's design doc checklist](https://github.com/ML-SystemDesign/MLSystemDesign/blob/main/templates/design_doc_checklist.md), populated with material from [Product Design in the Military and Security Sectors](https://github.com/your-scorpion/Product-Design-in-the-Military-and-Security-Sectors/tree/main/references/book) (Notes on Running a Design Department, Choosing the Right UX Research Method for Cybersecurity Products, Heuristics for Usable Information Security, Regulations and Formalities in Information Security).*
+
 
 ## Problem Definition
 - [ ] Stated the security/business problem as one or more falsifiable, SMART hypotheses (not a feeling — resolves to yes/no or a number)
