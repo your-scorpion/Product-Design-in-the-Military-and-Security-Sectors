@@ -1,6 +1,8 @@
 
 
 # Validating A/B Test Results
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 A/B tests are how teams settle arguments about interfaces. They're also how those arguments get settled wrongly, because the most common analytical mistake is comparing two means without choosing a test, without considering the sample. Eyeballing GA reports — "the chart that's higher is the better version" — leads to incorrect conclusions and costs businesses serious money. If your toolkit so far has been "the calculator should show p < 0.05" and "normal distribution looks like a bell," this article is meant to widen it.
 
