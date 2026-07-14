@@ -1,6 +1,7 @@
 # The Basics of Typography. For the Web, Too.
 
-*Maxim Tsvetkov — 16 September 2014*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 **Introduction.** Type is the single most important part of the corporate identity of any self-respecting company, and one of the few branches of design in Russia that still hasn't been popularized as it deserves to be. Companies that order their design "from the outside," especially through tenders, frequently end up with no coherent visual identity at all, thanks to the way design studios tend to operate. The result is the dreadful type you see at many large domestic companies — particularly when they've worked up the nerve to commission a Cyrillic typeface from a Western studio. Typography is the craft of working with type, and type has to give *emotion* to text. Not merely to be quirky.
 
