@@ -1,6 +1,6 @@
 # The Foundations of East Asian Symbolography
 
-*Maxim Tsvetkov — 21 May 2019*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ---
 
