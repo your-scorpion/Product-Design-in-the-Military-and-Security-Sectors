@@ -1,6 +1,6 @@
 # ANOVA and Bootstrap: Validating UX in Python
 
-*Maksim Tsvetkov*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 There is a moment in every analyst's career when A/B testing stops being a party trick. Before that moment, it's the right answer to give in an interview, or a bogeyman to scare developers with. After it, you simply reach for a scatterplot, a violin plot, or a boxplot with the quiet understanding that you are running an ordinary statistical experiment — the same kind a sociologist or a clinician runs. You have found the magic "make it good" button: no endless re-checking, just two variables plotted against each other. And that's all there is to it?
 
