@@ -1,11 +1,9 @@
----
-title: "Accessing DOM Nodes for UX Analytics"
-author: "Max Tsvetkov"
-date: "2018-03-12"
-source: "https://your-scorpion.ru/dom_js/"
----
+
 
 # Accessing DOM Nodes for UX Analytics
+
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 UX designers run into the same situation again and again: there's no manager, no graphic designer, no backend dev, no frontend dev available to spin up a test version of the site — and the hypothesis still needs to be checked. In that case, you have to edit the live web service yourself. JavaScript is how you get access to a page and control its content. With JS, you can pull whatever information you need out of the HTML and modify it for an A/B test or a prototype. Although this article is nominally about working with HTML nodes, it's really about working with the DOM in general. JS lets you do more than just change the behaviour of controls — you can also extract a surprising amount of useful data from input fields, which is exactly what makes them the hardest things to test, because users can type almost anything into them.
 
