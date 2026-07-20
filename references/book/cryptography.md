@@ -1,5 +1,6 @@
 # The Foundations of Cryptography
 
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ---
 
