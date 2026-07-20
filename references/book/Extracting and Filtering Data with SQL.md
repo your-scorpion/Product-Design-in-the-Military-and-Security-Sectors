@@ -1,6 +1,9 @@
 # Extracting and Filtering Data — SQL
 ### A working tour of the query language, from your first SELECT to designing the database
 
+*Maksim Tcvetkov · Product Design and Security Lead*
+
+
 We won't dwell on how useful SQL is; let's just open [SQLite Online](https://sqliteonline.com/) and start learning the query language for talking to data. If you run into encoding trouble, check that the encoding is utf8mb4 — it holds practically everything you might need, Cyrillic and emoji included. SQL was originally a language for accountants, which is where its simplicity comes from. It has no proper loops or procedures, only queries. There is, admittedly, a Microsoft dialect with loops, but you're unlikely to need to work with it. There are subsets of the SQL language — DML, DCL, DDL — but we'll be looking at the simplest SQL.
 
 Why do you need SQL at all, rather than staying in Google Analytics or Tableau? For typical, simple tasks those are excellent tools. But the main reason to move to SQL is the volume of data. On top of that, no one will let you upload customers' banking data into GA. And, above all, speed — writing a query is faster than writing a spec for someone to write the query. If you're already living in BI systems, data warehouses, and databases, you'll need SQL syntax everywhere: relational databases, warehouses like Hadoop, BI systems like Apache Zeppelin. And it isn't the last stop in your professional development, either — when SQL's capabilities run out, complex analytics calls for R or Python, since loops and row-by-row query iteration are very slow in SQL. There are five main types of database:
