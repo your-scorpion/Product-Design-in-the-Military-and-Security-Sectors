@@ -1,5 +1,7 @@
 # Gradient Boosting (AdaBoost)
 
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 Gradient boosting is used for classification and regression tasks and is similar to random forests. It is a complex topic, partly because the method is hard to interpret — that is, it is difficult to explain to a bank manager, in plain terms, what rules led to a given decision. In previous chapters on linear regression it was easy to see which feature carried which weight and how much it influenced the result. Gradient boosting applies to regression, classification, and any task with labeled data. One example is ranking the responses produced by a neural network inside voice assistants. The exception is computer vision and NLP — those are better handled by neural networks. In practice, easily interpretable algorithms are preferred, for instance in fintech. In marketing, however, complex algorithms like gradient boosting are entirely appropriate.
 
 We will look at a specific variant of gradient boosting called **AdaBoost (adaptive boosting)**, which is very straightforward to implement and combines several different models at once — not only trees, but trees tend to give the best results. It has good computational complexity and strong predictive performance. It works on the principle of reweighting results. Decision trees are the building blocks, and an ensemble of them is gradient boosting.
