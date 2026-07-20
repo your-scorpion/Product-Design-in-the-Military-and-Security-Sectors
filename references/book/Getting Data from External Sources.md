@@ -1,6 +1,7 @@
 # Getting Data from External Sources
 
-*Maxim Tsvetkov · February 20, 2019 · [original (RU)](https://your-scorpion.ru/rstudio-data-from-internet/)*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 R's functions can read data not just from your local machine but from the network as well. Suppose a task lands on you: gather every available contact for the sales managers handling a particular product in your region, and drop all of it, neatly formatted, into Excel. You can either spend hours crawling sites and copy-pasting by hand, or run a script across all of them and scrape the data. Before you do, though, read up on your country's laws about scraping websites. And since sites are physically hosted all over the world, it's better to also get written consent to scrape from the site's owners. Only then do you have the right to do any reverse engineering.
 
