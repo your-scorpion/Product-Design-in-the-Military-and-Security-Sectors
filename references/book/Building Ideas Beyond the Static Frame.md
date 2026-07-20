@@ -1,7 +1,7 @@
 # Building Ideas Beyond the Static Frame
 ### Storyboards and shooting boards, for advertising and film
 
-*Maksim Tcvetkov · 11 February 2016*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 **Storyboards and shot lists for advertising and film.** Every story is a narrative. People used to imagine stories, picture them in their heads, and an artist would simply visualize them. Once film production became an industrialized process, a sharp need emerged to visualize the exact visual sequence a director had in mind. That's the market storyboard artists occupy. The forerunners of the modern storyboard are the comics of the 1920s. The first storyboards appeared at Walt Disney's studio, and today they're an inseparable part of making a film.
 
