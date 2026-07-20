@@ -1,6 +1,7 @@
 # Advanced Principles of Designing Television Interfaces
 
-> Translated and adapted from the Russian original by Maxim Tsvetkov.
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 ## Contents
 
