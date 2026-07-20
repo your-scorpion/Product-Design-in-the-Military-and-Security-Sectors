@@ -1,6 +1,7 @@
 # User Experience in Virtual Reality
 
-*Maksim Tcvetkov · 27 March 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 Augmented reality (AR) and virtual reality (VR) have been around for a while now — reasonably reliable, and genuinely promising. Established standards already exist for these technologies, browsers like [junaio](https://play.google.com/store/apps/details?id=com.metaio.junaio) and [layar](https://play.google.com/store/apps/details?id=com.layar&hl=ru) among them, and plenty of people have seen large companies put these [technologies](https://play.google.com/store/apps/details?id=com.ikea.catalogue.android) to use already.
 
