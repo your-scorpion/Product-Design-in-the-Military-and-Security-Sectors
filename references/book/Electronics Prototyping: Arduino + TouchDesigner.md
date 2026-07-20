@@ -1,6 +1,8 @@
 
 
 # Electronics Prototyping: Arduino + TouchDesigner
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 One of the most interesting skills an industrial designer can develop is the ability to translate their ideas into the physical world. Alongside the obvious things — designing production-ready plastic parts, solid-body surface modelling in SolidWorks — they need to be comfortable with multiple prototyping techniques. Any technique will do: shape something out of clay, model it for the 3D printer, sketch it and find someone with the right machinery to cut, cast, or carve the shape you need. But an equally important branch of the work is prototyping electronics.
 
