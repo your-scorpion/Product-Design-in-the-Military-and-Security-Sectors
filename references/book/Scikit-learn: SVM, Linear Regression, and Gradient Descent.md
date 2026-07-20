@@ -1,6 +1,7 @@
 # Scikit-learn: SVM, Linear Regression, and Gradient Descent
 
-*Max Tsvetkov · originally published 28 October 2019. Translated and adapted from the Russian, with the author's follow-up answers from the original comment thread woven into the body as part of the argument. In-code labels have been translated to English, and Python indentation has been restored. A few short editor's notes flag libraries that have changed since publication.*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 ---
 
