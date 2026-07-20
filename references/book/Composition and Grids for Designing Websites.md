@@ -1,7 +1,8 @@
 # Composition and Grids for Designing Websites
 ### From the academic principles of illustration to the modular grid on screen
 
-*Maksim Tcvetkov · 2 October 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 Let's talk about composition, and about color within composition. For an illustrator, composition can't have fixed, unshakable laws, but there are certain nuances worth knowing all the same. I'll say up front that I won't be laying out dogma, drawing diagrams, or piling up examples. What follows are the important observations from the academic school that are worth keeping in mind throughout the whole process of building an illustration or a design. These aren't binding laws, though — book illustration has its own rules of composition, decorative-applied art has its own, painting has its own. I'll try to describe only the core means for achieving expressiveness in your work.
 
