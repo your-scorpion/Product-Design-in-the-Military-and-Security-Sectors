@@ -1,6 +1,8 @@
 
 
 # The Industrial Design Process for Rackmount Devices
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 Industrial design isn't always about couches, spoons, chairs, and consumer electronics. Rackmount devices need it too, and there's almost nothing written publicly about that side of the discipline. Large studios publish a lot of industrial-design process work, but very few describe the problems specialists actually run into when building even a small metal box with two buttons and ten connectors. This article is about the routine tasks and problems an industrial designer runs into.
 
