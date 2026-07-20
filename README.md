@@ -7,7 +7,7 @@
 [![Chapters](https://img.shields.io/badge/chapters-51-blue.svg)](references/book)
 [![Agent Skill](https://img.shields.io/badge/agent%20skill-security--design--lead-8A2BE2.svg)](SKILL.md)
 
-This repository is a working book, not a finished product. Each chapter is a self-contained essay drawn from ~15 years of practice across product design, industrial design, cybersecurity, and applied ML — originally published in Russian at [your-scorpion.ru](https://your-scorpion.ru/) and translated chapter by chapter. On top of the corpus sits **`security-design-lead`**, an agent skill that grounds design critique and direction in these chapters instead of generic advice.
+Each chapter is a self-contained essay drawn from ~20 years of practice across product design, industrial design, cybersecurity, and applied ML. On top of the corpus sits **`security-design-lead`**, an agent skill that grounds design critique and direction in these chapters instead of generic advice.
 
 The framing question throughout: **what does good design look like when the user is an analyst, operator, or responder working under fatigue and adversarial pressure — and a design flaw makes them miss a real alert, trust a spoofed signal, or fire a destructive action by accident?**
 
