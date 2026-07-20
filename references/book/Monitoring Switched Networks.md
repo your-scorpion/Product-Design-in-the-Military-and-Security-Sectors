@@ -1,6 +1,6 @@
 # Monitoring Switched Networks
 
-*By Maxim Tsvetkov*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Interfaces for enterprise tech companies demand more of a designer than design chops alone; they demand a working grasp of the neighbouring disciplines. Build tooling for network operations and you'll need to understand how switches are put together at the hardware level — TCAM, FIB versus RIB, CEF, and a great deal besides. This article walks through the fundamentals of network design and the rules for visualising what network devices tell you.
 
