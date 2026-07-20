@@ -1,6 +1,6 @@
 # Product Design in the Military & Security Sectors
 
-> A field-tested book on user-experience and product design for defense, security, and cybersecurity products — plus the AI agent skill that reasons over it. Design where the user is under threat, stress, time pressure, or adversarial conditions, and a wrong choice gets someone breached.
+> A field-tested book on user-experience and product design for defense, security, and cybersecurity products — adjusted as the AI agent skill that reasons over it. Design where the user is under threat, stress, time pressure, or adversarial conditions, and a wrong choice gets someone breached.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
