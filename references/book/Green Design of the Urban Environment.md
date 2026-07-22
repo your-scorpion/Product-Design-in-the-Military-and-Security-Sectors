@@ -1,6 +1,6 @@
 # Green Design of the Urban Environment
 
-*Adapted and translated from the original article by Maxim Tsvetkov (28 February 2022).*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 More than half the planet now lives in cities. Many people first cross the city limits only in their twenties, and can't really picture a life beyond them: the forest is a park, the vegetable patch is the lawn beside the apartment block. Some cities can be reckoned as countries in their own right — Dubai, Hong Kong, Moscow, Singapore. It's no surprise that housing an enormous number of people on a small patch of land demands careful planning and greening of the urban space. Spaces that are uncomfortable to live in drive people away, and with them the city's financial health — because companies pay their taxes where the skilled specialists live. Green plantings are one of the key factors in the comfort and the aesthetics of an environment.
 
