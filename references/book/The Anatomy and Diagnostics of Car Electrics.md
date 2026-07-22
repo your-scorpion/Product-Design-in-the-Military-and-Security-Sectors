@@ -1,7 +1,8 @@
 # The Anatomy and Diagnostics of Car Electrics
 ### From Ohm's law to fuses, wiring, and the side channels an ECU can leak through
 
-*Maksim Tcvetkov · 8 June 2024*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 ## What electricity actually is
 
