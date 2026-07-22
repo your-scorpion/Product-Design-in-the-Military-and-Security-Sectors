@@ -1,27 +1,5 @@
 # Creating Interactive Publications in InDesign
 
-> Translated and adapted from the Russian original by Maxim Tsvetkov.
-
-## Contents
-
-- [Choosing a format](#choosing-a-format)
-- [Protecting your work](#protecting-your-work)
-- [A short history of fonts, and why OpenType matters](#a-short-history-of-fonts-and-why-opentype-matters)
-- [Design and usability](#design-and-usability)
-- [Into production](#into-production)
-- [Folio Overlays](#folio-overlays)
-- [The Web Viewer](#the-web-viewer)
-- [Hyperlinks and Open in Folio](#hyperlinks-and-open-in-folio)
-- [Image Sequence](#image-sequence)
-- [Linking within the folio](#linking-within-the-folio)
-- [Importing HTML](#importing-html)
-- [Getting your hands on the folio file](#getting-your-hands-on-the-folio-file)
-- [Alternatives, and who this is really for](#alternatives-and-who-this-is-really-for)
-- [Bringing existing material into InDesign](#bringing-existing-material-into-indesign)
-- [Acrobat Pro and JavaScript](#acrobat-pro-and-javascript)
-- [An aside on prepress automation](#an-aside-on-prepress-automation)
-- [When Windows and Adobe misbehave](#when-windows-and-adobe-misbehave)
-
 A new era has arrived, and once again the programmers have automated away a great heap of boilerplate work. A whole class of button-pushing designers now finds itself hunting for new ways to earn a living — so let us learn to build interactive, multimedia documents and applications with Adobe's Digital Publishing Suite. Most of the work happens inside InDesign, where you assemble a file in the *folio* format and then distribute it through Adobe's services. And yes: distributing the fruits of your labour means handing Adobe a little money.
 
 As always, let us begin with the fundamentals — the things that keep you from tripping over your own feet later.
@@ -162,8 +140,6 @@ event.target.buttonImportIcon();
 ```
 
 Then move to the **Icon** tab and configure how the imported image appears in the document. It works simply enough.
-
-Acrobat's reach extends further than flat content. Interactive 3D models exported from CAD packages can be embedded directly in a PDF — as U3D or PRC — and rotated and inspected by the reader, which makes the format surprisingly capable for technical documentation.
 
 ## An aside on prepress automation
 
