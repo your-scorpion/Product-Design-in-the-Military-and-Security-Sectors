@@ -1,7 +1,7 @@
 # Machine Learning on ARM Microcontrollers (STM32)
 ### Building a small device that runs a model on milliwatts
 
-*Maksim Tcvetkov · 4 April 2023*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 So, we've decided to build some small device with ML built in. We need to train a model and to create the physical device itself. The first step is to give the device a name. Then settle on the controls — lay out the buttons, the display, the status indication, the encoder-joystick, and a power system that minimizes interference. If the device has to sense a magnetic field in a room, you'll need a sensing element. Everything listed has to be available on the market in volume, not be expensive, not complicate the board design, and be beautifully documented.
 
