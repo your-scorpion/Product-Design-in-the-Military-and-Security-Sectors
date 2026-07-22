@@ -1,31 +1,5 @@
 # Design Thinking
 
-> Translated and adapted from the Russian original by Maxim Tsvetkov.
-
-## Contents
-
-- [Introduction](#introduction)
-- [What design thinking is](#what-design-thinking-is)
-- [Generating hypotheses](#generating-hypotheses)
-- [Lateral thinking](#lateral-thinking)
-- [Filtering the ideas](#filtering-the-ideas)
-- [Our role](#our-role)
-- [Running a session](#running-a-session)
-- [The type of thinking](#the-type-of-thinking)
-- [Target audience and personas](#target-audience-and-personas)
-- [Empathy](#empathy)
-- [Focus](#focus)
-- [Prototype](#prototype)
-- [Information architecture, not site structure](#information-architecture-not-site-structure)
-- [Design and content](#design-and-content)
-- [Releasing and monetising](#releasing-and-monetising)
-- [Testing](#testing)
-- [Why all of this](#why-all-of-this)
-- [The design toolkit: Sketch and Figma](#the-design-toolkit-sketch-and-figma)
-- [Grids and screen sizes](#grids-and-screen-sizes)
-- [Metrics, analytics, and the numbers behind the work](#metrics-analytics-and-the-numbers-behind-the-work)
-- [Working the data: Excel and dashboards](#working-the-data-excel-and-dashboards)
-- [Interface patterns and feedback](#interface-patterns-and-feedback)
 
 ## Introduction
 
