@@ -1,7 +1,8 @@
 # Managing Paper Security
 ### Standards, risk, and the governance layer that makes cybersecurity actually stick
 
-*Maksim Tcvetkov · 18 January 2023*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 I suspect this will be my most boring article yet. What's more boring than following standards, even cybersecurity management standards? But a good engineer always follows instructions, and documentation is the foundation of management, information security included. Since working with documents is unavoidable, and it's a necessary condition for an organization's — and a specialist's — "growing up," let's dig into the subject properly.
 
