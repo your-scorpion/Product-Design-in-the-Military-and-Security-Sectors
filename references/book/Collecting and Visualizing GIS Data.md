@@ -1,7 +1,7 @@
 # Collecting and Visualizing GIS Data
 ### Lessons from restoring mangrove forests in the tropics
 
-*Maksim Tcvetkov · 7 February 2026*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ## Mangrove forests
 
