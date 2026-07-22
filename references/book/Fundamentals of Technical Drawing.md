@@ -1,7 +1,8 @@
 # Fundamentals of Technical Drawing
 ### A working reference for painting, retouching, and the Photoshop/Illustrator craft behind it
 
-*Maksim Tcvetkov · 15 October 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 ## Sequence
 
