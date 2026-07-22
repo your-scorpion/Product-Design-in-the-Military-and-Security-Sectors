@@ -1,7 +1,7 @@
 # Analyzing Malicious Files
 ### A working tour of malware analysis — static, dynamic, and everything the analyst reaches for
 
-*Maksim Tcvetkov · 11 February 2024*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Malware is the umbrella name for viruses, worms, trojans, and the other pests of the cyber world. Their main goal, in most cases, is to do damage and to gain access to protected resources. Some malware lands on your computer and pulls malicious code down from the network; others carry the dangerous code inside from the start. A keylogger, for instance, records everything you type on the keyboard and sends it back to its owner. A C&C (C2) is a bot that talks to a server, and the server sends tasks from the attacker down to your personal computer — one of which might be taking part in a DDoS, driving traffic at some machine on the network. Another example is the insider threat, which may well be a person — an employee of yours — who has led to the network's infection, deliberately or by accident.
 
