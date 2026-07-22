@@ -1,40 +1,7 @@
 # The Properties of Industrial Materials
 
-> Translated and adapted from the Russian original by Maxim Tsvetkov.
+*Maksim Tcvetkov · Product Design and Security Lead*
 
-## Contents
-
-- [Cost, price, and value](#cost-price-and-value)
-- [The senses: sound and smell](#the-senses-sound-and-smell)
-- [What nature already knows](#what-nature-already-knows)
-- [How things resist load](#how-things-resist-load)
-- [How materials break](#how-materials-break)
-- [Glass](#glass)
-- [Wood](#wood)
-- [When the render meets reality](#when-the-render-meets-reality)
-- [The building envelope](#the-building-envelope)
-- [Floors](#floors)
-- [Ceramics and tile](#ceramics-and-tile)
-- [Polymers](#polymers)
-- [Hard and soft, and a word on insulation](#hard-and-soft-and-a-word-on-insulation)
-- [Concrete](#concrete)
-- [Walls: panels, drywall, plaster, and finishes](#walls-panels-drywall-plaster-and-finishes)
-- [Rubber](#rubber)
-- [Natural stone](#natural-stone)
-- [Documentation and BIM](#documentation-and-bim)
-- [Form follows function](#form-follows-function)
-- [Metals](#metals)
-- [Functionality and plumbing](#functionality-and-plumbing)
-- [Pipe materials](#pipe-materials)
-- [Plumbing fixtures and wiring](#plumbing-fixtures-and-wiring)
-- [Ceilings](#ceilings)
-- [Designing real hardware](#designing-real-hardware)
-- [Grids, form, and composition](#grids-form-and-composition)
-- [Automotive design](#automotive-design)
-- [Prototyping and 3D printing](#prototyping-and-3d-printing)
-- [On site: the order of works](#on-site-the-order-of-works)
-- [The design process](#the-design-process)
-- [Protecting and procuring the work](#protecting-and-procuring-the-work)
 
 The core task of an industrial designer is to help the client beat a competitor in the market through the visual and functional uniqueness of the product being developed. Many domestic companies make design no worse than their rivals — and then rest there. Yet a large part of a product's uniqueness is its design. Look at Apple, at Blizzard: they spend a fortune on design and art and receive a colossal return from a grateful public. They make a little gem — charismatic, beautiful, flawless — the kind of thing you want to pick up and hold. These companies understand that high-quality visual presentation is a mandatory part of a successful product, and that excellent goods lead to higher profit. But design is not a colour, a grid, and a pattern on the box; all those typographic and conceptual flourishes are more accurately called decoration. So what is real, expensive design? What sets it apart, and what are its signs?
 
