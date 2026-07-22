@@ -1,27 +1,6 @@
 # Units of Measurement in iOS and Android
 
-> A designer-developer's reference for sizing mobile interfaces: pixels, points, and density-independent pixels; responsive layout and breakpoints; touch-target sizes; the full table of iOS and Android asset dimensions; density formulas and asset naming; plus page-load and runtime-performance optimization.
-
-**Author:** Maksim Tsvetkov · **Originally published:** 2 October 2012 · Translated from Russian. *(The author's later answers to reader questions are folded into the relevant sections below, by theme. Some device specifics reflect the state of the art in 2012.)*
-
----
-
-## Table of Contents
-
-- [Units of Measurement](#units-of-measurement)
-- [Adaptive (Responsive) Layout](#adaptive-responsive-layout)
-- [Design Sizes](#design-sizes)
-- [Navigation and Touch Targets](#navigation-and-touch-targets)
-- [Numbers for Mac People (iOS)](#numbers-for-mac-people-ios)
-- [Designing for Other Devices](#designing-for-other-devices)
-- [Android](#android)
-- [Android Screens, Aspect Ratios, and Font Sizes](#android-screens-aspect-ratios-and-font-sizes)
-- [Recommended Sizes, Resizing, and Naming](#recommended-sizes-resizing-and-naming)
-- [Density Formulas](#density-formulas)
-- [Performance and Load Optimization](#performance-and-load-optimization)
-- [Other Platforms and Links](#other-platforms-and-links)
-
----
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Designing and optimizing how a site displays on mobile devices is a mandatory part of building a site nowadays. The world has changed; the new generation no longer imagines the internet without mobile devices. And once again it is very important to account for content load speed. Yes, the broadband 100 Mbit went down the drain, and ideally sites once again weigh 150 KB (mobile ones only, of course! }: ). A project starts with UX (design), sometimes with a business analyst involved, and they must decide how the product will look across all devices.
 
