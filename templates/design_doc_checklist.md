@@ -1,7 +1,5 @@
 # Lead Product Designer (Cybersecurity) — Design Review Checklist
 
-
-
 ## Problem Definition
 - [ ] Stated the security/business problem as one or more falsifiable, SMART hypotheses (not a feeling — resolves to yes/no or a number)
 - [ ] Traced each hypothesis through the chain: need → real problem → ideal customer → why we beat alternatives → what the solution must include → monetization → willingness to pay
@@ -10,6 +8,8 @@
 - [ ] Identified stakeholders on both sides — security team, business/compliance, and end users/employees — and where their goals conflict
 - [ ] Assessed risk along severity, frequency, and criticality before defining target behavior
 - [ ] Defined what "done" looks like in concrete, non-vague terms (a Definition of Done for the initiative, not just the ticket)
+- [ ] Confirmed the problem statement actually describes a problem, not a solution wearing a problem's clothing
+- [ ] Stated non-goals explicitly — what this initiative will *not* address in this version, and why, so scope doesn't quietly expand mid-project
 
 ## Threat & Regulatory Context
 - [ ] Identified which standards apply (ISO/IEC 27001 & 27002, NIST SP 800-53, PCI DSS, HIPAA/HITRUST, ISO 31000) and what they actually require versus merely recommend
@@ -19,6 +19,12 @@
 - [ ] Considered confidentiality, integrity, and availability explicitly, not just "security" in the abstract
 - [ ] Flagged where a design decision could create an incident-response or evidentiary problem (logging, audit trail, non-repudiation)
 - [ ] Checked what raises a target user's individual threat profile before calibrating how much friction a control is allowed to add
+
+## Operating Environment & Device Constraints
+- [ ] Documented the operating environment — field or vehicle-mounted, fixed operations center, mobile/handheld, shared workstation — and what it implies for the interface
+- [ ] Documented connectivity assumptions (always-on / intermittent / fully offline) and how the interface degrades — a lagging or offline feed should read as *stale*, never silently as *all clear*
+- [ ] Documented hardware constraints — screen size and resolution, input method, ruggedization, and legibility under real conditions (direct sunlight, low light, long-shift eye strain)
+- [ ] Confirmed data-classification requirements map to concrete interface behavior — redaction, need-to-know gating, audit logging of who viewed what — not just a policy statement sitting elsewhere
 
 ## User & Stakeholder Research
 - [ ] Chose a research method that matches the hypothesis, not habit (interview vs. survey vs. usability test vs. field research vs. desk research)
@@ -30,6 +36,7 @@
 - [ ] Built or updated a CJM with an explicit "key conflict" section, not just an as-is description
 - [ ] Considered field research / contextual inquiry for understanding how security incidents and workarounds actually happen on the ground
 - [ ] Recorded every interview and stored it somewhere that meets the same confidentiality bar the product itself is held to
+- [ ] Gave every distinct user role its own persona rather than one composite user, with stress conditions and training level/frequency of use noted per role — a daily power user and a rare emergency-only user can't be designed for identically
 
 ## Security UX Heuristics
 - [ ] Security-relevant information is accessible, concise, and shown only when relevant to the current task
@@ -42,6 +49,7 @@
 - [ ] Accessibility for authentication and security flows covers visual, motor, and literacy constraints, not just WCAG contrast ratios
 - [ ] Re-ran Nielsen's heuristics through a security lens (status visibility, real-world match, error prevention, recognition over recall)
 - [ ] Verified nothing in the flow trains users toward unsafe workarounds (sticky-note passwords, artificial mouse movement to dodge a lock screen)
+- [ ] Explicitly designed the alert/incident state, not just the happy path — named where alert fatigue or mode confusion could set in during high-volume periods, and what specifically stops it
 
 ## Metrics & Measurement
 - [ ] Defined metrics with a quantitative expression, not "high/low" or "% risk reduction"
@@ -50,6 +58,7 @@
 - [ ] Set up automated behavioral signals where observation alone would be too slow, too costly, or would change behavior by being noticed
 - [ ] Tied metrics to the SLA / risk-treatment plan, not just to a dashboard nobody acts on
 - [ ] Checked readability and legibility of security copy separately (Flesch–Kincaid / Gunning Fog for wording, actual type and layout for presentation)
+- [ ] Validated under conditions that match real operating stress — time pressure, high volume, end-of-shift fatigue — where that's a genuine factor, not only in a quiet baseline session
 
 ## Design Process & Artifacts
 - [ ] Ran ideation/co-creation with the people who actually have the problem (security champions, SOC analysts, end users) before locking a direction
@@ -58,6 +67,7 @@
 - [ ] Confirmed the design doesn't ask users to trade convenience for security without a clear, communicated reason
 - [ ] Checked the design against existing design-system patterns before introducing a new security-specific pattern
 - [ ] Prototyped and pilot-tested with internal experts before the first real respondent session
+- [ ] Documented at least two genuinely different alternatives considered, with real tradeoffs — not just the winning direction presented as though it were inevitable
 
 ## Standards, Compliance & Documentation
 - [ ] Every mandatory rule the design implies is written as a policy/standard/procedure a real person can find and follow
@@ -100,3 +110,12 @@
 - [ ] Set up a feedback loop from real incidents (phishing reports, lockouts, support tickets) back into design iteration
 - [ ] Scheduled the next validation cycle instead of treating ship as done
 - [ ] Planned for drift — how the design ages as threats, regulations, and organizational behavior change
+- [ ] Sequenced rollout deliberately (pilot group → phased → full deployment) rather than defaulting to whoever happens to be ready to ship first
+- [ ] Confirmed engineering has everything needed to build without re-opening decisions already settled in this doc — specs, redlines, component-library references, not just a link to the file
+
+## Sign-off
+- [ ] Design reviewer
+- [ ] Security/compliance reviewer, if applicable
+- [ ] Accessibility reviewer, if applicable
+- [ ] Engineering lead
+- [ ] Product/business owner
