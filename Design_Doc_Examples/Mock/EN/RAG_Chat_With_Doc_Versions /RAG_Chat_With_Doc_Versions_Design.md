@@ -1,10 +1,10 @@
-# Aegis Compliance Assistant — RAG System Design
+# Internal Compliance & Security-Policy Assistant — RAG System Design
 
 ## I. Problem definition
 
 ### i. Origin
 
-Aegis Facilities Group's compliance and security-operations staff need fast, accurate answers about the company's own internal policies, procedures, and regulatory obligations — ISO 27001/27002 control implementations, the current Statement of Applicability, client-specific SLA terms, incident-response runbooks, and data-handling and classification rules. That material currently lives across roughly 2,000 documents: internally authored wiki pages (Markdown), scanned regulatory filings and signed client contracts (PDF/image), and a smaller set of structured control-mapping spreadsheets.
+The organization's compliance and security-operations staff need fast, accurate answers about its own internal policies, procedures, and regulatory obligations — ISO 27001/27002 control implementations, the current Statement of Applicability, client-specific SLA terms, incident-response runbooks, and data-handling and classification rules. That material currently lives across roughly 2,000 documents: internally authored wiki pages (Markdown), scanned regulatory filings and signed client contracts (PDF/image), and a smaller set of structured control-mapping spreadsheets.
 
 Today, getting an answer means either reading through the relevant document directly or tracking down whichever compliance officer happens to know the answer from memory — which doesn't scale, and leaves no record of what was actually asked or what the system said in response.
 
@@ -26,7 +26,7 @@ A recent internal audit found three cases, across a six-month sample, where an o
 
 **ii.iii. Other reasons**
 
-- If this works well for internal compliance staff, the same retrieval-and-citation approach could plausibly extend to helping account managers answer client questions about Aegis's own certifications and controls, which currently also routes through a compliance officer's inbox.
+- If this works well for internal compliance staff, the same retrieval-and-citation approach could plausibly extend to helping account managers answer client questions about the organization's own certifications and controls, which currently also routes through a compliance officer's inbox.
 - A well-built citation-verification layer here is reusable infrastructure — the same "does this answer's claim actually match its cited source" check would be useful anywhere else in the company that ships an LLM-backed feature.
 
 ### iii. Expectations
