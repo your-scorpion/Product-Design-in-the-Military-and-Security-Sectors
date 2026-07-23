@@ -1,125 +1,157 @@
-# Product Design in the Military & Security Sectors
+# Product Design in the Military and Security Sectors
 
-> A field-tested book on user-experience and product design for defense, security, and cybersecurity products — adjusted as the AI agent skill that reasons over it. Design where the user is under threat, stress, time pressure, or adversarial conditions, and a wrong choice gets someone breached.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.md)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Chapters](https://img.shields.io/badge/chapters-51-blue.svg)](references/book)
-[![Agent Skill](https://img.shields.io/badge/agent%20skill-security--design--lead-8A2BE2.svg)](SKILL.md)
-
-Each chapter is a self-contained essay drawn from ~20 years of practice across product design, industrial design, cybersecurity, and applied ML. On top of the corpus sits **`security-design-lead`**, an agent skill that grounds design critique and direction in these chapters instead of generic advice.
-
-The framing question throughout: **what does good design look like when the user is an analyst, operator, or responder working under fatigue and adversarial pressure — and a design flaw makes them miss a real alert, trust a spoofed signal, or fire a destructive action by accident?**
+A working knowledge base on product and UX design for security-sensitive and defense-adjacent contexts — spanning design fundamentals, engineering and industrial constraints, cybersecurity governance, and applied machine learning. Most of the article-length material started as posts on the author's own blog, [your-scorpion.ru](https://your-scorpion.ru), translated and expanded here into a single reference. Beyond the articles, the repo also includes reusable design-doc templates, fully worked examples, and a review skill built from the material itself.
 
 ## Repository Structure
 
 ```
-├── references/book/     # the chapters — one essay per file (51 translated)
-├── templates/           # reusable design artifacts
-│   ├── Product Design Document Template.md
-│   └── design_doc_checklist.md
-├── SKILL.md             # security-design-lead agent skill
-├── assets/images/       # figures and diagrams
-├── CONTRIBUTING.md      # how to add chapters, skills, and translations
-├── LICENSE.md           # MIT
-└── README.md            # this file
+├── templates/
+│   ├── design_doc_template.md         # Reusable template for a product/security design doc
+│   └── design_doc_checklist.md        # Review checklist for a filled-out design doc
+├── Design_Doc_Examples/
+│   └── EN/
+│       ├── security-operations-dashboard-example.md      # UX design doc: SOC alert-triage dashboard
+│       ├── Aegis_Sensor_Predictive_Maintenance_Design.md # ML system design doc: sensor fleet predictive maintenance
+│       └── Compliance_Assistant_RAG_Design.md            # RAG/LLM system design doc: internal compliance assistant
+├── skills/
+│   └── security-product-design-review/
+│       └── references/
+│           ├── security-and-systems-review.md  # Review categories, questions, red flags, stage adjustment
+│           ├── output-templates.md              # Scorecard + findings report structure
+│           ├── praise-patterns.md                # Mechanism-specific praise, no hollow phrases
+│           └── red-flags-and-fixes.md            # Prioritized severity tiers, fix ordering
+├── assets/images/                     # Images referenced by the articles below
+├── [article files, listed by topic below]
+└── README.md
 ```
 
 ## Getting Started
 
-1. **Want the ideas?** Browse the [chapters](#table-of-contents) below. Start with [Product Design Before the UI Stage](references/book/Product%20Design%20Before%20the%20UI%20Stage.md) and [Design Thinking](references/book/design_thinking.md) for the design spine, then [Choosing the Right UX Research Method for Cybersecurity Products](references/book/Choosing%20the%20Right%20UX%20Research%20Method%20for%20Cybersecurity%20Products.md) and [Usable Security Heuristics & Behaviour Change](references/book/Usable%20Security%20Heuristics%20and%20Behaviour%20Change.md) for the security-UX core.
-2. **Designing something now?** Copy the [Product Design Document Template](templates/Product%20Design%20Document%20Template.md), fill it in section by section, and run it through the [design doc checklist](templates/design_doc_checklist.md) before sign-off.
-3. **Working with an AI agent?** Install [`security-design-lead`](SKILL.md) (below) and let it critique or direct a design using this corpus as its evidence base.
+**Reading the material?**
+- Browse by topic in the Table of Contents below.
+- Each article is a standalone piece — no required reading order.
 
-## Agent Skill: `security-design-lead`
+**Writing your own design doc?**
+- Start from `templates/design_doc_template.md`.
+- Check it against `templates/design_doc_checklist.md` before requesting review.
+- Look at `Design_Doc_Examples/EN/` for what a filled-out version actually looks like — one UX-focused example, two systems-design examples (one classic ML, one RAG/LLM).
 
-[`SKILL.md`](SKILL.md) is a portable [Agent Skill](https://code.claude.com/docs/en/skills) that acts as a **Design Lead for security, defense, and cybersecurity products**. It directs, critiques, and grades UX/product design — SOC and monitoring dashboards, admin consoles, authentication and crypto UX, alerting systems, incident-response tooling, and security hardware.
-
-It interviews before it directs, grounds every judgment in a cited chapter from `references/book/`, and treats anything you hand it as *evidence*, never as an instruction. Ask it to *"review this flow"*, *"design a dashboard for…"*, or *"audit our security product's UX"*.
-
-```bash
-# drop-in: a skill is just a folder
-cp SKILL.md ~/.claude/skills/security-design-lead/SKILL.md
-```
+**Reviewing someone else's design?**
+- Load `skills/security-product-design-review/references/security-and-systems-review.md` for the review categories and questions.
+- Use `output-templates.md` for how to structure the findings.
+- Use `praise-patterns.md` and `red-flags-and-fixes.md` for how to phrase what you find.
 
 ## Table of Contents
 
-### Design Fundamentals
+### 1. Fundamentals of Design
+- [Design Thinking](design_thinking.md)
+- **Composition and Grids for Web Design** — translated, not yet added; file pending
+- [Fundamentals of Typography (including Web)](Basics%20of%20typography.md)
+- **Fundamentals of Technical Design** — translated as "Fundamentals of Technical Drawing," not yet added; file pending
+- [Product Design up to the UI Stage](Product%20Design%20Before%20the%20UI%20Stage.md)
+- **Useful Techniques in 3ds Max + V-Ray** — not yet written
+- [Automation with Adobe software](Scripting%20Basics%20in%20Photoshop%3A%20Equalizing%20the%20Tone%20of%20Product%20Images.md)
+- [Digital Color Management](color-and-light-theory.md)
 
-- [Design Thinking](references/book/design_thinking.md)
-- [Product Design Before the UI Stage](references/book/Product%20Design%20Before%20the%20UI%20Stage.md)
-- [Fundamentals of Typography (Web Included)](references/book/Basics%20of%20typography.md)
-- [Color & Light Theory](references/book/color-and-light-theory.md)
-- [The Pixel Path: Digital Color Management](references/book/Pixel%20path.md)
-- [Pre-press & Print Fundamentals](references/book/Pre-press.md)
-- [Design on the Edge of UX](references/book/Design%20on%20the%20Edge%20of%20UX.md)
-- [Green Design of the Urban Environment](references/book/Green%20Design%20of%20the%20Urban%20Environment.md)
-- [Foundations of East Asian Symbolography](references/book/The%20Foundations%20of%20East%20Asian%20Symbolography.md)
+### 2. Product Design Process & Production
+- **Ideation & Concept Development** — not yet written
+- **Prototyping & Rapid Iteration** — not yet written
+- [Mathematics in Gamification](The%20Mathematics%20of%20Gamification.md)
+- [Hyper-Casual Ergonomics](Hyper-Casual%20Ergonomics.md)
+- **Transition from Static Prototypes to Interactive** — translated as "Moving from Static Prototypes to Interactive Ones," not yet added; file pending
+- **Basic HTML + CSS** — not yet written
+- [Design on the Edge of UX](Design%20on%20the%20Edge%20of%20UX.md)
+- [Designing Television Interface](Designing%20Television%20Interface.md)
+- [Interactive Publications](Interactive%20Publications.md)
 
-### Design Process, Prototyping & Production
+### 3. Engineering & Technical Implementation
+- **Vehicle Electrical System Design and Diagnostics** — translated as "The Anatomy and Diagnostics of Car Electrics," not yet added; file pending
+- [Industrial Design Process of Rack-Mount Devices](industrial-design-process-for-rackmount-devices.md)
+- [Properties of Industrial Materials](properties-of-industrial-materials.md)
+- [Measurement Units in iOS and Android](Units%20of%20Measurement%20in%20iOS%20and%20Android.md)
+- [Client-Server Architecture of Casual Online Games](Client%20Server%20Interaction.md)
+- [Electronics Prototyping: Arduino + TouchDesigner](Electronics%20Prototyping%3A%20Arduino%20%2B%20TouchDesigner.md)
+- [Pixel Path](Pixel%20path.md)
+- [Pre-press](Pre-press.md)
 
-- [The Mathematics of Gamification](references/book/The%20Mathematics%20of%20Gamification.md)
-- [Hyper-Casual Ergonomics](references/book/Hyper-Casual%20Ergonomics.md)
-- [Electronics Prototyping: Arduino + TouchDesigner](references/book/Electronics%20Prototyping%3A%20Arduino%20%2B%20TouchDesigner.md)
-- [Interactive Publications (inDesign)](references/book/Interactive%20Publications.md)
-- [xCode for Interface Prototypes](references/book/xcode.md)
-- [D3.js for Building Charts](references/book/d3.md)
-- [Designing Television Interfaces](references/book/Designing%20Television%20Interface.md)
-- [Scripting Basics in Photoshop](references/book/Scripting%20Basics%20in%20Photoshop%3A%20Equalizing%20the%20Tone%20of%20Product%20Images.md)
-- [Automating Asset Slicing for Mobile Devices](references/book/Automating%20Asset%20Slicing%20for%20Mobile%20Devices.md)
-- [Regular Expressions in a Designer's Practice](references/book/Regular%20Expressions%20in%20a%20Designer%27s%20Practice.md)
+### 4. Cyber-Security Foundations
+- **Computer-Systems Security** — translated as "Security of Computer Systems," not yet added; file pending
+- [Fundamentals of Cryptography](cryptography.md)
+- [Heuristics of User-Friendly Information Security](Usable%20Security%20Heuristics%20and%20Behaviour%20Change.md)
+- **Regulations and Formalities in Information Security** — not yet written (see also Paper-Security Management below, which may cover the same ground)
+- **Paper-Security Management** — translated as "Managing Paper Security," not yet added; file pending
+- **Malicious File Analysis** — translated as "Analyzing Malicious Files," not yet added; file pending
+- **Preparing an Information-Security Report** — translated as "Preparing a Security Report," not yet added; file pending
+- [Choosing the Right UX Research Method for Cybersecurity Products](Choosing%20the%20Right%20UX%20Research%20Method%20for%20Cybersecurity%20Products.md)
 
-### UX Research, Interviews & Design Management
+### 5. Cyber-Security Practices & Analytics
+- [Monitoring Switched Networks](Monitoring%20Switched%20Networks.md)
+- [ANOVA and Bootstrap: Testing UX in Python](ANOVA%20and%20Bootstrap%3A%20Validating%20UX%20in%20Python.md)
+- [Product ROI Analytics](The%20Economics%20of%20a%20Product%3A%20End-to-End%20Analytics.md)
+- [Working with Tables in R: Data.table and OLAP](Working%20with%20Tables%20in%20R%3A%20data.table%20and%20OLAP.md)
+- [Python in Test Analysis](Python%20in%20the%20Analysis%20of%20Experiments.md)
+- [Accessing DOM Nodes for UX Analytics](Accessing%20DOM%20Nodes%20for%20UX%20Analytics.md)
 
-- [Choosing the Right UX Research Method for Cybersecurity Products](references/book/Choosing%20the%20Right%20UX%20Research%20Method%20for%20Cybersecurity%20Products.md)
-- [Foundational Templates for the UX Researcher](references/book/Foundational%20Templates%20for%20the%20UX%20Researcher.md)
-- [From Cognitive Psychology to the Interview](references/book/From%20Cognitive%20Psychology%20to%20the%20Interview.md)
-- [Preparing for Interviews with Experts](references/book/Preparing%20for%20Interviews%20with%20Experts.md)
-- [Accessing DOM Nodes for UX Analytics](references/book/Accessing%20DOM%20Nodes%20for%20UX%20Analytics.md)
-- [Notes on Running a Design Department](references/book/Notes%20on%20Running%20a%20Design%20Department.md)
-- [Working in International Markets](references/book/Working%20in%20International%20Markets.md)
-- [Business Analysis](references/book/Business%20Analysis.md)
-- [Systemic Thinking in Behavioral Economics](references/book/Systemic%20Thinking%20in%20Behavioral%20Economics.md)
-- [Logic & Clients](references/book/logic_and_clients.md)
+### 6. AI / Machine-Learning Foundations
+- [A/B Test Results Verification](AB%20Tests%20Check%20Mathematics.md)
+- [Recommendation Systems: ALS, AP@k, NDCG](Recommendation%20Systems%20ALS%20APK%20NDCG.md)
+- [Machine Learning on ARM Microcontrollers (STM32)](Microcontrollers%20ARM%20STM32%20Tinyml.md)
+- [Gradient Boosting (AdaBoost)](Gradient%20Boosting%20(AdaBoost).md)
 
-### Engineering & Industrial Design
+### 7. Data Science & Advanced Techniques
+- [PCA: Data Dimensionality Reduction](PCA%3A%20Reducing%20the%20Dimensionality%20of%20Your%20Data.md)
+- [Scikit-learn: SVM, Linear Regression, Gradient Descent](Scikit-learn%3A%20SVM%2C%20Linear%20Regression%2C%20and%20Gradient%20Descent.md)
+- **Creating LLM Agents and Using MCP** — not yet written (see `Design_Doc_Examples/EN/Compliance_Assistant_RAG_Design.md` for a related worked example in the meantime)
 
-- [Industrial Design Process for Rack-Mount Devices](references/book/industrial-design-process-for-rackmount-devices.md)
-- [Properties of Industrial Materials](references/book/properties-of-industrial-materials.md)
-- [Units of Measurement in iOS and Android](references/book/Units%20of%20Measurement%20in%20iOS%20and%20Android.md)
-- [Client-Server Architecture of Casual Online Games](references/book/Client%20Server%20Interaction.md)
+### 8. AI Application & Integration
+- **Data Extraction and Filtering – SQL** — translated as "Extracting and Filtering Data — SQL," not yet added; file pending
+- [Acquiring Data from External Sources](Getting%20Data%20from%20External%20Sources.md)
+- [d3.js](d3.md)
+- [Regular Expressions in a Designer's Practice](Regular%20Expressions%20in%20a%20Designer's%20Practice.md)
+- [Automating Asset Slicing for Mobile Devices](Automating%20Asset%20Slicing%20for%20Mobile%20Devices.md)
 
-### Cybersecurity
+### 9. Working With People
+*(Not present in the original 8-section outline — folding in here rather than leaving these six files unlisted.)*
+- [Notes on Running a Design Department](Notes%20on%20Running%20a%20Design%20Department.md)
+- [Foundational Templates for the UX Researcher](Foundational%20Templates%20for%20the%20UX%20Researcher.md)
+- [From Cognitive Psychology to the Interview](From%20Cognitive%20Psychology%20to%20the%20Interview.md)
+- [Preparing for Interviews with Experts](Preparing%20for%20Interviews%20with%20Experts.md)
+- [The Researcher's Toolkit: Templates That Actually Survive Contact With a Project](The%20Researcher's%20Toolkit%3A%20Templates%20That%20Actually%20Survive%20Contact%20With%20a%20Project.md)
+- [Working in International Markets](Working%20in%20International%20Markets.md)
+- [The Foundations of East Asian Symbolography](The%20Foundations%20of%20East%20Asian%20Symbolography.md)
 
-- [Fundamentals of Cryptography](references/book/cryptography.md)
-- [Usable Security Heuristics & Behaviour Change](references/book/Usable%20Security%20Heuristics%20and%20Behaviour%20Change.md)
-- [Regulations & Formalities in Information Security](references/book/Regulations%20and%20Formalities%20in%20Information%20Security.md)
-- [Analyzing Malicious Files](references/book/Analyzing%20Malicious%20Files.md)
-- [Monitoring Switched Networks](references/book/Monitoring%20Switched%20Networks.md)
+*Note on `xcode.md`: a fuller translation ("Xcode for Interface Prototypes") exists separately and covers more ground than the current file — worth checking whether to replace it before relying on this section's listing.*
 
-### Analytics, Data Science & Machine Learning
+## Templates
 
-- [A/B Test Results Verification](references/book/AB%20Tests%20Check%20Mathematics.md)
-- [ANOVA & Bootstrap: Validating UX in Python](references/book/ANOVA%20and%20Bootstrap%3A%20Validating%20UX%20in%20Python.md)
-- [The Economics of a Product: End-to-End Analytics](references/book/The%20Economics%20of%20a%20Product%3A%20End-to-End%20Analytics.md)
-- [Python in the Analysis of Experiments](references/book/Python%20in%20the%20Analysis%20of%20Experiments.md)
-- [Working with Tables in R: data.table & OLAP](references/book/Working%20with%20Tables%20in%20R%3A%20data.table%20and%20OLAP.md)
-- [Extracting & Filtering Data with SQL](references/book/Extracting%20and%20Filtering%20Data%20with%20SQL.md)
-- [Getting Data from External Sources](references/book/Getting%20Data%20from%20External%20Sources.md)
-- [Collecting & Visualizing GIS Data](references/book/Collecting%20and%20Visualizing%20GIS%20Data.md)
-- [Recommendation Systems: ALS, AP@k, NDCG](references/book/Recommendation%20Systems%20ALS%20APK%20NDCG.md)
-- [Gradient Boosting (AdaBoost)](references/book/Gradient%20Boosting%20%28AdaBoost%29.md)
-- [PCA: Reducing Data Dimensionality](references/book/PCA%3A%20Reducing%20the%20Dimensionality%20of%20Your%20Data.md)
-- [Scikit-learn: SVM, Linear Regression & Gradient Descent](references/book/Scikit-learn%3A%20SVM%2C%20Linear%20Regression%2C%20and%20Gradient%20Descent.md)
-- [Machine Learning on ARM Microcontrollers (STM32)](references/book/Machine%20Learning%20on%20ARM%20Microcontrollers%20%28STM32%29.md)
+Two templates live in `templates/`:
+
+- **`design_doc_template.md`** — an 11-section template covering problem statement, context and constraints, personas, normal/degraded/alert states, alternatives considered, risks with mandatory paired mitigations, validation plan, and rollout.
+- **`design_doc_checklist.md`** — a review checklist matching the template's structure, extended with security-governance depth (SMART hypotheses, standards mapping, threat modeling, team leadership, presentation) and ending in an explicit sign-off block.
+
+## Worked Examples
+
+Three fully worked design docs in `Design_Doc_Examples/EN/`, each demonstrating the template and checklist applied to a real (fictional, illustrative) scenario:
+
+- **A UX design doc** — an alert-triage dashboard for a security operations center.
+- **An ML systems design doc** — predictive maintenance for a distributed physical-security sensor fleet, structurally analogous to a classic demand-forecasting design doc but built around a genuinely different problem: rare-event failure prediction rather than continuous demand.
+- **A RAG/LLM systems design doc** — an internal compliance and security-policy assistant, centered on classification-gated retrieval and citation verification rather than the general document-chat problem a typical RAG example covers.
+
+Both systems-design examples include an adversarial "Robustness Hardening" section, added after a structured multi-perspective review — worth reading as a model for critiquing your own designs, not just as reference content.
+
+## Review Skill
+
+`skills/security-product-design-review/` is a loadable skill for reviewing product and system designs in security-sensitive contexts. It uses a four-tier maturity signal (Missing / Assumed / Partially specified / Verified) rather than a numeric grade, with explicit stage adjustment so an early concept isn't judged against production-readiness standards, and vice versa. Its six review categories, red flags, and praise patterns are all grounded in the articles above and in the findings from the worked examples' own robustness reviews — not a generic checklist imported from elsewhere.
+
 ## Contributing
 
-Contributions are welcome — new chapters, corrections, translations, agent skills, and structured reviews. The book is still being translated from Russian, so [translations](CONTRIBUTING.md) are especially useful. See [CONTRIBUTING.md](CONTRIBUTING.md) for layout conventions and style.
+No `CONTRIBUTING.md` yet — worth adding if this repo is meant to take outside contributions rather than stay a personal reference. Until then: keep new articles consistent with the existing topic sections above, and run new design docs through `templates/design_doc_checklist.md` before adding them as examples.
 
 ## License
 
-MIT — see [LICENSE.md](LICENSE.md).
+Not yet specified. Since this repository is your own original writing and translated work, worth deciding deliberately — even "all rights reserved" is better stated explicitly than left silent — and adding a `LICENSE` file to match.
 
 ## Acknowledgments
 
-Written and translated by **Max Tsvetkov** ([your-scorpion.ru](https://your-scorpion.ru/) · [LinkedIn](https://www.linkedin.com/in/tsvetkovmaxim/) · [Portfolio](https://tsvet.framer.ai/)). Background spanning security product design (Kaspersky), an MSc in Cyber Security (Royal Holloway), and product/design leadership — brought to bear on the question of how security products should actually feel to the people who depend on them.
+- Source material for most articles: [your-scorpion.ru](https://your-scorpion.ru)
+- Review skill and worked examples built from this repository's own content
