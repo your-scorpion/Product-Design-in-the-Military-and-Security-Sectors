@@ -109,7 +109,6 @@ A working knowledge base on product and UX design for security-sensitive and def
 - [Automating Asset Slicing for Mobile Devices](<references/book/Automating Asset Slicing for Mobile Devices.md>)
 
 ### 9. Working With People
-*(Not present in the original 8-section outline — grouped here rather than left unlisted.)*
 - [Notes on Running a Design Department](<references/book/Notes on Running a Design Department.md>)
 - [Foundational Templates for the UX Researcher](<references/book/Foundational Templates for the UX Researcher.md>)
 - [From Cognitive Psychology to the Interview](<references/book/From Cognitive Psychology to the Interview.md>)
@@ -120,7 +119,6 @@ A working knowledge base on product and UX design for security-sensitive and def
 - [Selling Your Experience in a Brutally Competitive Market](<references/book/Selling Your Experience in a Brutally Competitive Market.md>)
 
 ### 10. Immersive & Cross-Platform Interfaces
-*(A second uncategorized group — spans VR/AR and multiplatform specification work.)*
 - [User Experience in Virtual Reality](<references/book/User Experience in Virtual Reality.md>)
 - [Xcode for Interface Prototypes](<references/book/Xcode for Interface Prototypes.md>)
 - [Preparing Specifications for Multiplatform Products](<references/book/Preparing Specifications for Multiplatform Products.md>)
@@ -149,15 +147,3 @@ Both systems-design examples include an adversarial "Robustness Hardening" secti
 
 `skills/security-product-design-review/` is a loadable skill for reviewing product and system designs in security-sensitive contexts. It uses a four-tier maturity signal (Missing / Assumed / Partially specified / Verified) rather than a numeric grade, with explicit stage adjustment so an early concept isn't judged against production-readiness standards, and vice versa.
 
-## Contributing
-
-No `CONTRIBUTING.md` yet — worth adding if this repo is meant to take outside contributions rather than stay a personal reference.
-
-## License
-
-Not yet specified. Since this repository is your own original writing and translated work, worth deciding deliberately and adding a `LICENSE` file to match.
-
-## Acknowledgments
-
-- Source material for all articles: [your-scorpion.ru](https://your-scorpion.ru)
-- Review skill and worked examples built from this repository's own content
