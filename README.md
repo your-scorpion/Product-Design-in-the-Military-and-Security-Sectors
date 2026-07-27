@@ -1,6 +1,6 @@
 # Product Design in the Military and Security Sectors
 
-A working knowledge base on product and UX design for security-sensitive and defense-adjacent contexts — spanning design fundamentals, engineering and industrial constraints, cybersecurity governance, and applied machine learning. The article-length material started as posts on the author's own blog, [your-scorpion.ru](https://your-scorpion.ru), translated and expanded here into a single reference under `references/book/`. Beyond the articles, the repo also includes reusable design-doc templates, fully worked examples, and a review skill.
+A working knowledge base on product and UX design for security-sensitive and defense-adjacent contexts — spanning design fundamentals, engineering and industrial constraints, cybersecurity governance, and applied machine learning. The repo also includes reusable design-doc templates, fully worked examples, and a review skill.
 
 ## Repository Structure
 
