@@ -49,17 +49,13 @@ A working knowledge base on product and UX design for security-sensitive and def
 - [Fundamentals of Typography (including Web)](<references/book/Basics of typography.md>)
 - [Fundamentals of Technical Drawing](<references/book/Fundamentals of Technical Drawing.md>)
 - [Product Design Before the UI Stage](<references/book/Product Design Before the UI Stage.md>)
-- **Useful Techniques in 3ds Max + V-Ray** — not yet added
 - [Automation with Adobe Software](<references/book/Scripting Basics in Photoshop: Equalizing the Tone of Product Images.md>)
 - [Digital Color Management](references/book/color-and-light-theory.md)
 
 ### 2. Product Design Process & Production
-- **Ideation & Concept Development** — not yet written
-- **Prototyping & Rapid Iteration** — not yet written
 - [Mathematics in Gamification](<references/book/The Mathematics of Gamification.md>)
 - [Hyper-Casual Ergonomics](<references/book/Hyper-Casual Ergonomics.md>)
 - [Transition from Static Prototypes to Interactive](<references/book/Moving from Static Prototypes to Interactive Ones.md>)
-- **Basic HTML + CSS** — not yet added
 - [Building Ideas Beyond the Static Frame](<references/book/Building Ideas Beyond the Static Frame.md>)
 - [Design on the Edge of UX](<references/book/Design on the Edge of UX.md>)
 - [Designing Television Interface](<references/book/Designing Television Interface.md>)
@@ -104,7 +100,6 @@ A working knowledge base on product and UX design for security-sensitive and def
 ### 7. Data Science & Advanced Techniques
 - [PCA: Reducing the Dimensionality of Your Data](<references/book/PCA: Reducing the Dimensionality of Your Data.md>)
 - [Scikit-learn: SVM, Linear Regression, and Gradient Descent](<references/book/Scikit-learn: SVM, Linear Regression, and Gradient Descent.md>)
-- **Creating LLM Agents and Using MCP** — not yet added (see `Design_Doc_Examples/EN/Compliance_Assistant_RAG_Design.md` for a related worked example in the meantime)
 
 ### 8. AI Application & Integration
 - [Extracting and Filtering Data with SQL](<references/book/Extracting and Filtering Data with SQL.md>)
@@ -132,18 +127,6 @@ A working knowledge base on product and UX design for security-sensitive and def
 - [Variable Data in Adobe Illustrator](<references/book/Variable data in adobe illustrator.md>)
 - [Basic Rules for Book Typesetting](<references/book/Basic Rules for Book Typesetting.md>)
 - [Green Design of the Urban Environment](<references/book/Green Design of the Urban Environment.md>)
-
-## Remaining Gaps
-
-Three articles from the original blog haven't been added yet:
-- Создание LLM-агентов и использование MCP (LLM Agents and MCP)
-- Верстка подвала сайта HTML+CSS (HTML+CSS Footer Layout)
-- Data Merge в inDesign
-
-Three further posts are password-protected on the original blog and were never publicly accessible:
-- Защищено: UX аналитика на основе оффлайн-данных
-- Защищено: Как не ошибиться Арт-директору
-- Защищено: Дизайнер на рынке труда
 
 ## Templates
 
