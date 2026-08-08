@@ -1,8 +1,6 @@
 # Basic Rules for Book Typesetting
 ### A working reference for Cyrillic/Russian-language typography — the rules that carry straight into English, and the ones that are specifically about Russian
 
-*Maksim Tcvetkov · 23 December 2013*
-
 This isn't an essay — it's a plain set of rules for typesetting. Some of it is borrowed from books and articles, some comes from my own experience and my colleagues'. There's dogma here that's non-negotiable, and there are simple recommendations too. This cheat sheet will help you check just how professionally a piece of work has actually been done. These rules can be broken — on a part-title page, say — but for ordinary body text, they're worth holding to.
 
 A quick note before diving in: a good portion of what follows is universal typesetting practice, the same principles you'd find in any serious English-language reference on the subject. But a real share of it is specifically about Cyrillic and the conventions of Russian-language typesetting — quote nesting, the decimal comma, formal address, and so on — and those are marked clearly as such below, since they don't carry over into English the way the rest does.
