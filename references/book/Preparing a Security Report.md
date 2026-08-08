@@ -1,7 +1,7 @@
 # Preparing a Security Report
 ### A hands-on tour from infrastructure and testing to the document that makes it matter
 
-*Maksim Tcvetkov · 5 March 2025*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ## Servers and virtual machines
 
