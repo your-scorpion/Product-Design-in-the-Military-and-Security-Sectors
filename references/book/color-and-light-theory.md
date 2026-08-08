@@ -1,4 +1,6 @@
 # An Introduction to Color and Light Theory
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 
 Today I will cover the fundamentals of color science. But I have no intention, of course, of limiting myself to advising you to paint a color wheel in watercolor and do a still life in three colors. Those are basic exercises you can manage on your own. This article leans more toward *memory colors*, *neutral colors*, and other popular terms from the color grading of photo, video, and art.
