@@ -1,6 +1,6 @@
 # Choosing the Right UX Research Method for Cybersecurity Products
 
-*Max Tsvetkov*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Before you choose a research method, choose a goal. Every study needs one, and that goal is a hypothesis. Skip the hypothesis and you'll pick the wrong method, write the wrong test tasks, and miss the one finding that actually mattered.
 
