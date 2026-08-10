@@ -1,5 +1,6 @@
 # Client-Server Architecture of Casual Networked Games
 
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ---
 
