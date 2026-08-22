@@ -1,6 +1,6 @@
 # Xcode for Interface Prototypes
 
-*Maksim Tcvetkov · 19 March 2017*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Why does a designer need to know how to lay out iOS apps at all? First and foremost, it helps open a real dialogue between developer and designer. Knowing the nuances and capabilities of development saves time and lets you use 100% of what the platform offers. For instance, understanding that Launch Screen only works from iOS 8 onward, and that iOS 7 and earlier need a launch image added to the app's asset catalog instead, lets you produce every asset in one pass, without peppering developers with irritating questions.
 
