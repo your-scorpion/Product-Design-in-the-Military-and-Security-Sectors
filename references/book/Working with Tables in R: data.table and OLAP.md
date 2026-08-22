@@ -1,3 +1,4 @@
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 
 Tables are one of the main ways of working with structured data. R has a great many libraries for working with them. `data.table` is one of the fastest R libraries for large arrays of tabular data, and it works on the basis of chains: the result from one link is passed to the next link as a finished result. In effect, it's an improved, inherited version of `data.frame`, which is the standard data structure for storage in base R.
