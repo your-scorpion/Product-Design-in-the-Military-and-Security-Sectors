@@ -1,4 +1,5 @@
 # Design Thinking
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 
 ## Introduction
