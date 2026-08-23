@@ -1,6 +1,6 @@
 # The Syntax of Search Queries
 
-*Maksim Tcvetkov · 4 April 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Searching the internet effectively means using a range of command operators — search queries that set precise conditions on what you're looking for. Only then do you get a genuinely short list of documents that actually match your query, instead of a million pages of results. Since research is one of the core ways we learn, work, and make decisions, it's hard to overstate how valuable it is to search as effectively as possible.
 
