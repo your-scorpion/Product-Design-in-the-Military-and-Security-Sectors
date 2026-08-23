@@ -1,7 +1,9 @@
 # Variable Data in Adobe Illustrator
+
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 ### Turning repetitive layout work into a batch job, from template to export
 
-*Maksim Tcvetkov · 14 May 2015*
 
 A lot of what designers do is repetitive: adapting a flyer built by a star designer to fit a company's branch contact details, dropping a pile of photos into a business-card template, exporting print-ready graphics for a day's worth of reporting. All of it eats time and energy without offering much satisfaction in return — most designers would rather create than sit around cutting and pasting content. Fortunately, Illustrator lets you dynamically swap objects in a layout and save yourself a great deal of time, the same way [InDesign](https://your-scorpion.ru/principle-data-merge-indesign/) does. Let's walk through this not-especially-popular feature.
 
