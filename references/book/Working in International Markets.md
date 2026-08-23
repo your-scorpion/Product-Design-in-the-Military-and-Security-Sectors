@@ -1,6 +1,6 @@
 # Working in International Markets
 
-*Maxim Tsvetkov · February 2, 2019 · [original (RU)](https://your-scorpion.ru/international-work/)*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 This article is about stereotypes. Naturally, every person, case, and business is unique and has its own particularities. An Italian may behave like a German, and a German may act like a Belgian. Stereotypes never show the full picture. Yes, Norwegians eat a lot of fish, Swedes put shrimp on their hot dogs, and Germans wear tall socks with sandals and shorts on hikes and demand their change down to the last penny — never missing a chance for sarcasm. Italians think the French smell bad, and Spaniards think the same of the British. Finns drink a lot; Swedes deeply value personal space but care little for their personal data. Still, you need to know the general median trend. There are objective technical nuances too: across nearly all of Europe and Latin America, a comma separates the decimal from the whole number, while in Asia and the States it's a period — which is why we use UTF-8 everywhere. The Chinese, meanwhile, are far more tolerant of social inequality than Americans, and more inclined toward risk. But these are trifles. What I want to talk about are the more significant — and less Googleable — aspects of working with different nations.
 
