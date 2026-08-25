@@ -3,19 +3,6 @@
 *Maksim Tcvetkov · Product Design and Security Lead*
 
 
-## Contents
-
-- [Designing for the couch](#designing-for-the-couch)
-- [The remote control](#the-remote-control)
-- [Response speed and animation](#response-speed-and-animation)
-- [Other controllers](#other-controllers)
-- [Text and the rule of 13](#text-and-the-rule-of-13)
-- [Keeping focus](#keeping-focus)
-- [Showing content on the big screen](#showing-content-on-the-big-screen)
-- [The second screen](#the-second-screen)
-- [Catch Up](#catch-up)
-- [Presenting the content](#presenting-the-content)
-- [Smart TV, Google TV, and the set-top box](#smart-tv-google-tv-and-the-set-top-box)
 
 ## Designing for the couch
 
