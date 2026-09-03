@@ -1,7 +1,7 @@
 # From Cognitive Psychology to the Interview
 
+*Maksim Tcvetkov · Product Design and Security Lead*
 
----
 
 Practice makes one thing clear: almost nobody knows how to run an interview. Product people sprint around the market announcing that "demographics aren't personas, you have to build a CJM" — and then stop, as if naming the problem were the same as solving it. The games world isn't much healthier. Plenty of teams still lean on Richard Bartle's classic taxonomy: Achievers, Killers, Explorers, and Socializers. Bartle, a game-design professor, built the typology with online games in mind — specifically, on the strength of the first game he made back in the '90s. All four roles sit on a chart with an X and a Y axis. The Y axis runs from acting to interacting; the X axis runs from a desire to engage other players to a desire to engage the world.
 
