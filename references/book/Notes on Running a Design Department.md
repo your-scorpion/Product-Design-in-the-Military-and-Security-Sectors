@@ -1,6 +1,6 @@
 # Notes on Running a Design Department
 
-*by Maxim Tsvetkov*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ## The limits of attention
 
