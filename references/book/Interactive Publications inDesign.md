@@ -1,5 +1,8 @@
 # Creating Interactive Publications in InDesign
 
+*Maksim Tcvetkov · Product Design and Security Lead*
+
+
 A new era has arrived, and once again the programmers have automated away a great heap of boilerplate work. A whole class of button-pushing designers now finds itself hunting for new ways to earn a living — so let us learn to build interactive, multimedia documents and applications with Adobe's Digital Publishing Suite. Most of the work happens inside InDesign, where you assemble a file in the *folio* format and then distribute it through Adobe's services. And yes: distributing the fruits of your labour means handing Adobe a little money.
 
 As always, let us begin with the fundamentals — the things that keep you from tripping over your own feet later.
