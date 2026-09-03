@@ -1,6 +1,6 @@
 # Foundational Templates for the UX Researcher
 
-*Maksim Tsvetkov — 29 January 2021*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Every research effort, however ambitious, resolves into four movements: define the goals and objectives, prepare and recruit, run the study, then analyze and synthesize. And like any honest article on the subject, this one has to open with the tedious part — understanding the problem. It is tedious precisely because it is where most projects quietly go wrong. Get the **goal** of the research wrong and you will reach for the wrong method, and the findings will end up in a drawer no one opens. Worse, the blind spot between goals and objectives tends to propagate downstream until it resurfaces as a mispositioned product.
 
