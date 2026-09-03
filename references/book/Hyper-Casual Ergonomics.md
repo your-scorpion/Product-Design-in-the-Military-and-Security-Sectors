@@ -1,6 +1,6 @@
 # Hyper-Casual Ergonomics
 
-*Max Tsvetkov — 19 March 2020*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 ---
 
