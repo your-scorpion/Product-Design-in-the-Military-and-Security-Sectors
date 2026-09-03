@@ -1,6 +1,6 @@
 # Moving from Static Prototypes to Interactive Ones
 
-*Maksim Tcvetkov · 6 July 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Designers who draw out websites page by page in Photoshop are becoming less and less in demand. Specialists who keep drawing nothing but static comps, creating a pile of problems for themselves and for developers alike, get hired very reluctantly these days. Plenty of business owners have already been burned, and understand that 90% of web projects don't turn a profit, and that poorly thought-out web projects down the line become an endless source of headaches and marketing spend. But good designers who actually care about their clients need to reach into the front end and build their own ideas with their own hands. Most of the problems a client will run into — badly thought-out usability, above all — are easy to catch in an interactive prototype. And an interactive prototype needs to happen as fast as possible: build it, show it, build it, show it — which is why we won't be considering Axure here. Like any sufficiently complex tool, Axure makes it very easy to slide into excessive detail.
 
