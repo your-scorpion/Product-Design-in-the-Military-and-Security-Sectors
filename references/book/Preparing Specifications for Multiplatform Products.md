@@ -1,7 +1,7 @@
 # Preparing Specifications for Multiplatform Products
 ### What separates a production that survives contact with reality from one that doesn't — and the documentation that makes the difference
 
-*Maksim Tcvetkov · 12 September 2015*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 All successful digital productions are alike; every unsuccessful one is unsuccessful in its own way. Which raises the obvious question: what actually separates the successful productions from the rest? The quality of the project's preparation. Successful productions study their subject matter thoroughly and exhaustively, minimizing the number of open questions once design begins — that's the whole secret. Cooper made much the same point when he wrote that specifications are the best way for a programmer and a designer to communicate with each other. But even once a designer has written the documentation and built specifications with real depth, they still have to stay continuously involved through development — at minimum, half of any project changes along the way, and every one of those accompanying changes has to be documented by the designer too. Build specifications, and beyond a successful project, you also get a working way to survive the bureaucracy around it.
 
