@@ -1,5 +1,7 @@
 # The Path of a Pixel: How Digital Color Management Works
 
+*Maksim Tcvetkov · Product Design and Security Lead*
+
 
 This note will help designers understand the principle by which color is formed on a monitor and in Photoshop. All information about color traces back to the CIE experiment, which produced the spectral color-sensitivity curves corresponding to particular color sensations. In 1931 the experiment established that humans perceive colors well in the red, green, and blue regions of the spectrum; this gave rise to the CIE 1931 color model, and later to CIE XYZ. It is precisely CIE XYZ that sits in the middle of any RGB-to-RGB conversion. And every color model in use today is built on the result of that experiment. From its findings came the color solid and the color locus, which define the boundaries of visible color, letting us draw chromaticity diagrams and work with different color spaces.
 
