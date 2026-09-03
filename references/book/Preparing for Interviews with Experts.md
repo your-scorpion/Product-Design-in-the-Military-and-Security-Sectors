@@ -1,6 +1,6 @@
 # Business Analysis
 
-*Adapted and translated from the original article by Maxim Tsvetkov (7 February 2022).*
+*Maksim Tcvetkov · Product Design and Security Lead*
 
 Working with requirements is a critical part of building a product. The product designer, product manager, or business analyst defines the problems together with stakeholders and describes the solution, and the finished requirements go to the development team. In this piece we'll concentrate on the business analyst's role, because it's the analyst who focuses on finding and analyzing information, interviewing stakeholders, spotting new opportunities, and surfacing problems. The business analyst carries the work from an initial idea to a fully formed business need, resolving conflicts in the requirements along the way. You could characterize an analyst as someone who knows how to make sense of information, how to acquire new information, and who holds an exhaustive understanding of the data.
 
