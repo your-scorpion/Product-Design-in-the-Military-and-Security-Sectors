@@ -1,5 +1,8 @@
 # Answers to the Main Questions About Printing
 
+*Maksim Tcvetkov · Product Design and Security Lead*
+
+
 > A working designer's field guide to prepress: how CMYK and Pantone actually behave, total ink limits, resolution math, black generation, dot gain, color profiles, monitor calibration, screening, trapping, spot colors, file preparation, imposition, and a long tail of production edge cases.
 
 
