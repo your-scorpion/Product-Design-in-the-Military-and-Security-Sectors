@@ -13,7 +13,6 @@ metadata:
   version: 0.1.0
   scope: security-defense-execution-discipline
   reference: https://github.com/your-scorpion/Product-Design-in-the-Military-and-Security-Sectors
-  pattern_origin: One Feature at a Time — mokevnin, Agentic Coding Design Patterns
   companion_skill: security-triage-state-machine
 ---
 
